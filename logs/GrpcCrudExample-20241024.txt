@@ -150,3 +150,4 @@ System.ArgumentException: CsvContent cannot be null
 2024-10-24 17:05:07.821 +03:00 [INF] 00-d905ebc13e9461a23635769905f96e98-cb37dcb9e0c681c1-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 144929 text/css 7.7026ms
 2024-10-24 17:05:07.910 +03:00 [INF] 00-dccd89e2611500b6c791dda9cc3a6247-3d4dba19c58bd9e2-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
 2024-10-24 17:05:07.972 +03:00 [INF] 00-dccd89e2611500b6c791dda9cc3a6247-3d4dba19c58bd9e2-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.0872ms
+2024-10-24 17:05:48.890 +03:00 [INF]  Application is shutting down...
