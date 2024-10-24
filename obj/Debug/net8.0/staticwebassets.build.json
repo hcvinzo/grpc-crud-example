@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JZn5xZCpLUqh0EzHAJky7WBqoF+bfVST2y8bKvWEbiA=",
+  "Source": "grpc-crud-example",
+  "BasePath": "_content/grpc-crud-example",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

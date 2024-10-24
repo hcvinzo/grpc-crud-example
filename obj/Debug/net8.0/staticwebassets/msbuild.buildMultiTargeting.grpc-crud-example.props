@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/grpc-crud-example.props" />
+</Project>

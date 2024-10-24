@@ -1,0 +1,17 @@
+2024-10-24 11:12:29.767 +03:00 [INF]  Application is shutting down...
+2024-10-24 11:12:41.279 +03:00 [INF]  Starting web application
+2024-10-24 11:12:41.692 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-24 11:12:41.706 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-24 11:12:41.744 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-24 11:12:41.748 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-24 11:12:41.759 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-24 11:12:41.765 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-24 11:12:41.765 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-24 11:12:41.765 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-24 11:12:41.765 +03:00 [INF]  Hosting environment: Development
+2024-10-24 11:12:41.765 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-24 11:12:44.320 +03:00 [INF] 00-1c13513d11aa2e543aa65468007956f5-d3c96b802d9d344c-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-24 11:12:44.389 +03:00 [INF] 00-1c13513d11aa2e543aa65468007956f5-d3c96b802d9d344c-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 69.2212ms
+2024-10-24 11:12:44.481 +03:00 [INF] 00-ce525b7adc0ff8ef2090ed07215c5b06-2bfca440038e3968-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-24 11:12:44.542 +03:00 [INF] 00-ce525b7adc0ff8ef2090ed07215c5b06-2bfca440038e3968-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.4594ms
+2024-10-24 11:12:57.734 +03:00 [INF]  Application is shutting down...

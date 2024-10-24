@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcCrudExample.v1";
+
+package greet.v1;
+
+import "google/api/annotations.proto";
+
+// Order importer service
+  service OrderImporter {
+    rpc ImportOrderCsvStream (stream ImportOrderRequest) returns (ImportOrderResponse) {
+      option (google.api.http) = {
+        post: "/v1/orders/import-streaming"
+        body: "*"
+      };
+    }
+
+    rpc ImportOrderCsv (ImportOrderRequest) returns (ImportOrderResponse) {
+  option (google.api.http) = {
+    post: "/v1/orders/import"
+    body: "*"
+  };
+}
+    
+    rpc ExportOrderCsv (ExportOrderRequest) returns (ExportOrderResponse) {
+      option (google.api.http) = {
+        get: "/v1/orders/export"
+      };
+    }
+
+    rpc ExportOrderCsvStream (ExportOrderRequest) returns (stream ExportOrderResponse) {
+  option (google.api.http) = {
+    get: "/v1/orders/export-streaming"
+  };
+}
+  }
+
+  message ImportOrderRequest {
+    string csv_content = 1;
+  }
+
+  message ImportOrderResponse {
+    int32 imported_count = 1;
+  }
+
+  message ExportOrderRequest {
+    // You can add filter parameters here if needed
+  }
+
+  message ExportOrderResponse {
+    string csv_content = 1;
+  }

@@ -1,0 +1,31 @@
+2024-10-23 16:44:14.010 +03:00 [INF]  Starting web application
+2024-10-23 16:44:14.409 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 16:44:14.424 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 16:44:14.459 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 16:44:14.462 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 16:44:14.467 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 16:44:14.471 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 16:44:14.471 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 16:44:14.471 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 16:44:14.471 +03:00 [INF]  Hosting environment: Development
+2024-10-23 16:44:14.471 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 16:44:19.207 +03:00 [INF] 00-1e42546d8a345153c0d034df86994a69-24aa0cc9cf1e79a5-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 16:44:19.271 +03:00 [INF] 00-1e42546d8a345153c0d034df86994a69-24aa0cc9cf1e79a5-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 64.9416ms
+2024-10-23 16:44:19.374 +03:00 [INF] 00-f9fc099b36ecee922aeb2b16635649bd-deb398c26ff0614c-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 16:44:19.434 +03:00 [INF] 00-f9fc099b36ecee922aeb2b16635649bd-deb398c26ff0614c-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.9863ms
+2024-10-23 16:44:39.911 +03:00 [INF]  Application is shutting down...
+2024-10-23 16:44:44.324 +03:00 [INF]  Starting web application
+2024-10-23 16:44:44.688 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 16:44:44.703 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 16:44:44.731 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 16:44:44.734 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 16:44:44.738 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 16:44:44.744 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 16:44:44.744 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 16:44:44.744 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 16:44:44.744 +03:00 [INF]  Hosting environment: Development
+2024-10-23 16:44:44.744 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 16:44:47.393 +03:00 [INF] 00-ea6aca9b75a6f23f112932384f4611d0-549ce0851d9cc8d4-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 16:44:47.456 +03:00 [INF] 00-ea6aca9b75a6f23f112932384f4611d0-549ce0851d9cc8d4-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 64.2327ms
+2024-10-23 16:44:47.489 +03:00 [INF] 00-1e043cedf65c643877193f4c2002a554-53ae2a66d7d7260c-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 16:44:47.548 +03:00 [INF] 00-1e043cedf65c643877193f4c2002a554-53ae2a66d7d7260c-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.2946ms

@@ -1,0 +1,864 @@
+2024-10-23 11:52:14.434 +03:00 [INF] Starting web application
+2024-10-23 11:52:14.834 +03:00 [INF] User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 11:52:14.867 +03:00 [WRN] Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 11:52:14.870 +03:00 [WRN] HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 11:52:14.874 +03:00 [WRN] HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 11:52:14.878 +03:00 [INF] Now listening on: http://localhost:5000
+2024-10-23 11:52:14.878 +03:00 [INF] Now listening on: https://localhost:5001
+2024-10-23 11:52:14.878 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-23 11:52:14.879 +03:00 [INF] Hosting environment: Development
+2024-10-23 11:52:14.879 +03:00 [INF] Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 12:04:07.157 +03:00 [INF] Application is shutting down...
+2024-10-23 12:04:11.463 +03:00 [INF] Starting web application
+2024-10-23 12:04:11.843 +03:00 [INF] User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 12:04:11.875 +03:00 [WRN] Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 12:04:11.878 +03:00 [WRN] HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 12:04:11.882 +03:00 [WRN] HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 12:04:11.886 +03:00 [INF] Now listening on: http://localhost:5000
+2024-10-23 12:04:11.886 +03:00 [INF] Now listening on: https://localhost:5001
+2024-10-23 12:04:11.886 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-23 12:04:11.886 +03:00 [INF] Hosting environment: Development
+2024-10-23 12:04:11.886 +03:00 [INF] Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 12:04:17.187 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 12:04:17.271 +03:00 [INF] Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 12:04:17.281 +03:00 [INF] Authetntication request for Hakan from ipv4:127.0.0.1:57133
+2024-10-23 12:04:17.296 +03:00 [INF] Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 12:04:17.297 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 110.585ms
+2024-10-23 12:04:38.851 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - application/grpc null
+2024-10-23 12:04:38.875 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/22/2024 8:38:01 AM', Current time (UTC): '10/23/2024 9:04:38 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 12:04:38.883 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/22/2024 8:38:01 AM', Current time (UTC): '10/23/2024 9:04:38 AM'.
+2024-10-23 12:04:38.885 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-23 12:04:38.888 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-10-23 12:04:38.888 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - 401 0 null 36.678ms
+2024-10-23 12:04:53.460 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - application/grpc null
+2024-10-23 12:04:53.467 +03:00 [INF] Executing endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-23 12:04:53.468 +03:00 [INF] Saying hello in Turkish to Hakan
+2024-10-23 12:04:53.468 +03:00 [INF] Executed endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-23 12:04:53.468 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - 200 null application/grpc 8.0566ms
+2024-10-23 12:06:26.693 +03:00 [INF] Application is shutting down...
+2024-10-23 12:10:19.569 +03:00 [INF] Starting web application
+2024-10-23 12:10:19.940 +03:00 [INF] User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 12:10:19.968 +03:00 [WRN] Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 12:10:19.971 +03:00 [WRN] HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 12:10:19.975 +03:00 [WRN] HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 12:10:19.979 +03:00 [INF] Now listening on: http://localhost:5000
+2024-10-23 12:10:19.979 +03:00 [INF] Now listening on: https://localhost:5001
+2024-10-23 12:10:19.979 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-23 12:10:19.980 +03:00 [INF] Hosting environment: Development
+2024-10-23 12:10:19.980 +03:00 [INF] Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 12:10:27.511 +03:00 [INF] Application is shutting down...
+2024-10-23 12:15:23.681 +03:00 [INF]  Starting web application
+2024-10-23 12:15:24.086 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 12:15:24.117 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 12:15:24.120 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 12:15:24.125 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 12:15:24.129 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 12:15:24.129 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 12:15:24.129 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 12:15:24.129 +03:00 [INF]  Hosting environment: Development
+2024-10-23 12:15:24.129 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 12:15:39.645 +03:00 [INF] 00-48f1958e7d89fc9d003b102230db7454-743a30c48ee06385-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 12:15:39.681 +03:00 [INF] 00-48f1958e7d89fc9d003b102230db7454-743a30c48ee06385-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 12:15:39.690 +03:00 [INF] 00-48f1958e7d89fc9d003b102230db7454-743a30c48ee06385-00 Authetntication request for Hakan from ipv4:127.0.0.1:57243
+2024-10-23 12:15:39.705 +03:00 [INF] 00-48f1958e7d89fc9d003b102230db7454-743a30c48ee06385-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 12:15:39.705 +03:00 [INF] 00-48f1958e7d89fc9d003b102230db7454-743a30c48ee06385-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 60.5268ms
+2024-10-23 12:15:49.229 +03:00 [INF] 00-ca91156645c670ab688b4c1e653eb53f-00ac68631fce5f31-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - application/grpc null
+2024-10-23 12:15:49.259 +03:00 [INF] 00-ca91156645c670ab688b4c1e653eb53f-00ac68631fce5f31-00 Executing endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-23 12:15:49.260 +03:00 [INF] 00-ca91156645c670ab688b4c1e653eb53f-00ac68631fce5f31-00 Saying hello in Turkish to Hakan
+2024-10-23 12:15:49.260 +03:00 [INF] 00-ca91156645c670ab688b4c1e653eb53f-00ac68631fce5f31-00 Executed endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-23 12:15:49.261 +03:00 [INF] 00-ca91156645c670ab688b4c1e653eb53f-00ac68631fce5f31-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - 200 null application/grpc 31.8082ms
+2024-10-23 13:57:08.015 +03:00 [INF] 00-36e7d99c0b7deb6f7d1827444fddf3cc-0b893e8272c7dbb9-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - application/grpc null
+2024-10-23 13:57:08.019 +03:00 [INF] 00-36e7d99c0b7deb6f7d1827444fddf3cc-0b893e8272c7dbb9-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 9:30:39 AM', Current time (UTC): '10/23/2024 10:57:08 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 13:57:08.026 +03:00 [INF] 00-36e7d99c0b7deb6f7d1827444fddf3cc-0b893e8272c7dbb9-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 9:30:39 AM', Current time (UTC): '10/23/2024 10:57:08 AM'.
+2024-10-23 13:57:08.027 +03:00 [INF] 00-36e7d99c0b7deb6f7d1827444fddf3cc-0b893e8272c7dbb9-00 Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-23 13:57:08.029 +03:00 [INF] 00-36e7d99c0b7deb6f7d1827444fddf3cc-0b893e8272c7dbb9-00 AuthenticationScheme: Bearer was challenged.
+2024-10-23 13:57:08.030 +03:00 [INF] 00-36e7d99c0b7deb6f7d1827444fddf3cc-0b893e8272c7dbb9-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - 401 0 null 15.1144ms
+2024-10-23 13:57:11.183 +03:00 [INF] 00-96d396c6730703cc17775b58edae2d5c-4116b9f6aa155231-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 13:57:11.185 +03:00 [INF] 00-96d396c6730703cc17775b58edae2d5c-4116b9f6aa155231-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 13:57:11.185 +03:00 [INF] 00-96d396c6730703cc17775b58edae2d5c-4116b9f6aa155231-00 Authetntication request for Hakan from ipv4:127.0.0.1:57435
+2024-10-23 13:57:11.186 +03:00 [INF] 00-96d396c6730703cc17775b58edae2d5c-4116b9f6aa155231-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 13:57:11.186 +03:00 [INF] 00-96d396c6730703cc17775b58edae2d5c-4116b9f6aa155231-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 3.22ms
+2024-10-23 13:57:14.039 +03:00 [INF] 00-824ab1d5b88c56ed604b6622f80f0a5e-80c7a32460c3741a-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - application/grpc null
+2024-10-23 13:57:14.039 +03:00 [INF] 00-824ab1d5b88c56ed604b6622f80f0a5e-80c7a32460c3741a-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 9:30:39 AM', Current time (UTC): '10/23/2024 10:57:14 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 13:57:14.040 +03:00 [INF] 00-824ab1d5b88c56ed604b6622f80f0a5e-80c7a32460c3741a-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 9:30:39 AM', Current time (UTC): '10/23/2024 10:57:14 AM'.
+2024-10-23 13:57:14.041 +03:00 [INF] 00-824ab1d5b88c56ed604b6622f80f0a5e-80c7a32460c3741a-00 Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-23 13:57:14.041 +03:00 [INF] 00-824ab1d5b88c56ed604b6622f80f0a5e-80c7a32460c3741a-00 AuthenticationScheme: Bearer was challenged.
+2024-10-23 13:57:14.041 +03:00 [INF] 00-824ab1d5b88c56ed604b6622f80f0a5e-80c7a32460c3741a-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - 401 0 null 2.7919ms
+2024-10-23 13:57:26.557 +03:00 [INF] 00-cfd5624e993b6bb7e1d0b033699348de-7d2d44960d35893f-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - application/grpc null
+2024-10-23 13:57:26.558 +03:00 [INF] 00-cfd5624e993b6bb7e1d0b033699348de-7d2d44960d35893f-00 Executing endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-23 13:57:26.558 +03:00 [INF] 00-cfd5624e993b6bb7e1d0b033699348de-7d2d44960d35893f-00 Saying hello in Turkish to Hakan
+2024-10-23 13:57:26.559 +03:00 [INF] 00-cfd5624e993b6bb7e1d0b033699348de-7d2d44960d35893f-00 Executed endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-23 13:57:26.559 +03:00 [INF] 00-cfd5624e993b6bb7e1d0b033699348de-7d2d44960d35893f-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - 200 null application/grpc 1.9366ms
+2024-10-23 13:58:28.659 +03:00 [INF]  Application is shutting down...
+2024-10-23 14:09:41.153 +03:00 [INF]  Starting web application
+2024-10-23 14:09:41.557 +03:00 [WRN]  Unable to bind ImportOrderCsv on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 14:09:41.569 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 14:09:41.602 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 14:09:41.604 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 14:09:41.609 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 14:09:41.614 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 14:09:41.614 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 14:09:41.614 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 14:09:41.614 +03:00 [INF]  Hosting environment: Development
+2024-10-23 14:09:41.614 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 14:09:47.280 +03:00 [INF] 00-41a47067e5199069c5e01740e183b5e3-3f0a5080fea0d911-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 14:09:47.346 +03:00 [INF] 00-41a47067e5199069c5e01740e183b5e3-3f0a5080fea0d911-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 66.2459ms
+2024-10-23 14:09:47.439 +03:00 [INF] 00-6805aaef343a338ec0d3e8be139a1ff0-9e4a572eaf5f7501-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 14:09:47.499 +03:00 [INF] 00-6805aaef343a338ec0d3e8be139a1ff0-9e4a572eaf5f7501-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.7444ms
+2024-10-23 14:09:59.509 +03:00 [INF] 00-ccad659a5a8d42ffafb714df8d5b22b9-6fb8111cb7a19a50-00 Request starting HTTP/1.1 GET http://localhost:5000/v1/orders/export - null null
+2024-10-23 14:09:59.515 +03:00 [INF] 00-ccad659a5a8d42ffafb714df8d5b22b9-6fb8111cb7a19a50-00 Executing endpoint 'gRPC - /v1/orders/export'
+2024-10-23 14:09:59.558 +03:00 [INF] 00-ccad659a5a8d42ffafb714df8d5b22b9-6fb8111cb7a19a50-00 Exported 2 orders
+2024-10-23 14:09:59.564 +03:00 [INF] 00-ccad659a5a8d42ffafb714df8d5b22b9-6fb8111cb7a19a50-00 Executed endpoint 'gRPC - /v1/orders/export'
+2024-10-23 14:09:59.564 +03:00 [INF] 00-ccad659a5a8d42ffafb714df8d5b22b9-6fb8111cb7a19a50-00 Request finished HTTP/1.1 GET http://localhost:5000/v1/orders/export - 200 null application/json; charset=utf-8 55.8512ms
+2024-10-23 14:14:45.678 +03:00 [INF]  Application is shutting down...
+2024-10-23 14:15:00.197 +03:00 [INF]  Starting web application
+2024-10-23 14:15:00.570 +03:00 [WRN]  Unable to bind ImportOrderCsv on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 14:15:00.582 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 14:15:00.612 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 14:15:00.614 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 14:15:00.619 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 14:15:00.623 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 14:15:00.623 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 14:15:00.624 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 14:15:00.624 +03:00 [INF]  Hosting environment: Development
+2024-10-23 14:15:00.624 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 14:15:04.555 +03:00 [INF] 00-cee7cb0c84e84ae7d8f2ff9ec3a0c263-7812dbf61fd89b49-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 14:15:04.622 +03:00 [INF] 00-cee7cb0c84e84ae7d8f2ff9ec3a0c263-7812dbf61fd89b49-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 67.2563ms
+2024-10-23 14:15:04.708 +03:00 [INF] 00-f7d33f78b969ac09dbd356fb3276fe80-c8f5ff8f03a47b65-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 14:15:04.769 +03:00 [INF] 00-f7d33f78b969ac09dbd356fb3276fe80-c8f5ff8f03a47b65-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.0439ms
+2024-10-23 14:23:53.631 +03:00 [INF] 00-a26bc38832de6507f39f7dd8c02ad400-625136a7092d2b87-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:23:53.636 +03:00 [INF] 00-a26bc38832de6507f39f7dd8c02ad400-625136a7092d2b87-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:23:53.656 +03:00 [INF] 00-a26bc38832de6507f39f7dd8c02ad400-625136a7092d2b87-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:23:53.657 +03:00 [INF] 00-a26bc38832de6507f39f7dd8c02ad400-625136a7092d2b87-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 25.3653ms
+2024-10-23 14:23:53.658 +03:00 [INF] 00-e3c671c1251c0dcae3cf088eab275c82-f3f4f03220b3cc97-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:23:53.658 +03:00 [INF] 00-62a085acd10b9d199e3f4b44a1510c29-8002fde55463a9de-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:23:53.658 +03:00 [INF] 00-e3c671c1251c0dcae3cf088eab275c82-f3f4f03220b3cc97-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:23:53.658 +03:00 [INF] 00-62a085acd10b9d199e3f4b44a1510c29-8002fde55463a9de-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:23:53.665 +03:00 [INF] 00-62a085acd10b9d199e3f4b44a1510c29-8002fde55463a9de-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:23:53.665 +03:00 [INF] 00-e3c671c1251c0dcae3cf088eab275c82-f3f4f03220b3cc97-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:23:53.667 +03:00 [INF] 00-62a085acd10b9d199e3f4b44a1510c29-8002fde55463a9de-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 9.3035ms
+2024-10-23 14:23:53.667 +03:00 [INF] 00-e3c671c1251c0dcae3cf088eab275c82-f3f4f03220b3cc97-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 9.3332ms
+2024-10-23 14:26:14.311 +03:00 [INF]  Application is shutting down...
+2024-10-23 14:29:55.656 +03:00 [INF]  Starting web application
+2024-10-23 14:29:56.063 +03:00 [WRN]  Unable to bind ImportOrderCsv on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 14:29:56.075 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 14:29:56.108 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 14:29:56.111 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 14:29:56.116 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 14:29:56.120 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 14:29:56.121 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 14:29:56.121 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 14:29:56.121 +03:00 [INF]  Hosting environment: Development
+2024-10-23 14:29:56.121 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 14:30:02.804 +03:00 [INF] 00-e2eb99c043121a4f9b9ccaba439a1324-c683b13463663479-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 14:30:02.871 +03:00 [INF] 00-e2eb99c043121a4f9b9ccaba439a1324-c683b13463663479-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 67.7977ms
+2024-10-23 14:30:02.961 +03:00 [INF] 00-f31f45a1746a4543db7be7c4c1c30771-1be086e156281b78-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 14:30:03.021 +03:00 [INF] 00-f31f45a1746a4543db7be7c4c1c30771-1be086e156281b78-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.5005ms
+2024-10-23 14:34:22.121 +03:00 [INF]  Application is shutting down...
+2024-10-23 14:34:26.144 +03:00 [INF]  Starting web application
+2024-10-23 14:34:26.515 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 14:34:26.526 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 14:34:26.556 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 14:34:26.559 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 14:34:26.563 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 14:34:26.567 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 14:34:26.567 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 14:34:26.567 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 14:34:26.567 +03:00 [INF]  Hosting environment: Development
+2024-10-23 14:34:26.567 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 14:34:30.535 +03:00 [INF] 00-d75b667a7af856445152903408fbf3b4-a94d17ce6c2be1a0-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 14:34:30.597 +03:00 [INF] 00-d75b667a7af856445152903408fbf3b4-a94d17ce6c2be1a0-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 63.3424ms
+2024-10-23 14:34:30.628 +03:00 [INF] 00-d989404d24e8d08739e9c98bb9892b67-2caf037862baa535-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 14:34:30.685 +03:00 [INF] 00-d989404d24e8d08739e9c98bb9892b67-2caf037862baa535-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.0048ms
+2024-10-23 14:35:35.599 +03:00 [INF] 00-5fa259e3818cf7c1d9b654d131229c20-5189b800f48b8010-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:35:35.604 +03:00 [INF] 00-5fa259e3818cf7c1d9b654d131229c20-5189b800f48b8010-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:35.625 +03:00 [INF] 00-5fa259e3818cf7c1d9b654d131229c20-5189b800f48b8010-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:35.626 +03:00 [INF] 00-5fa259e3818cf7c1d9b654d131229c20-5189b800f48b8010-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 26.7285ms
+2024-10-23 14:35:35.626 +03:00 [INF] 00-247db7f9daceb45adfae1520ad36a9a8-7445c734868ceb77-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:35:35.626 +03:00 [INF] 00-060d9f6ec38ee9e71e9b9a93487d6c01-964288569046feff-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:35:35.627 +03:00 [INF] 00-247db7f9daceb45adfae1520ad36a9a8-7445c734868ceb77-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:35.627 +03:00 [INF] 00-060d9f6ec38ee9e71e9b9a93487d6c01-964288569046feff-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:35.633 +03:00 [INF] 00-247db7f9daceb45adfae1520ad36a9a8-7445c734868ceb77-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:35.634 +03:00 [INF] 00-060d9f6ec38ee9e71e9b9a93487d6c01-964288569046feff-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:35.635 +03:00 [INF] 00-247db7f9daceb45adfae1520ad36a9a8-7445c734868ceb77-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 9.0817ms
+2024-10-23 14:35:35.635 +03:00 [INF] 00-060d9f6ec38ee9e71e9b9a93487d6c01-964288569046feff-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 9.089ms
+2024-10-23 14:35:40.876 +03:00 [INF] 00-0a4e0cf67c1f9f46d71bf99264c61769-829c7efa7bc0a37a-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:35:40.904 +03:00 [INF] 00-0a4e0cf67c1f9f46d71bf99264c61769-829c7efa7bc0a37a-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:40 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:35:40.911 +03:00 [INF] 00-0a4e0cf67c1f9f46d71bf99264c61769-829c7efa7bc0a37a-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:40 AM'.
+2024-10-23 14:35:40.911 +03:00 [INF] 00-0a4e0cf67c1f9f46d71bf99264c61769-829c7efa7bc0a37a-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:40.912 +03:00 [INF] 00-0a4e0cf67c1f9f46d71bf99264c61769-829c7efa7bc0a37a-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:40.912 +03:00 [INF] 00-0a4e0cf67c1f9f46d71bf99264c61769-829c7efa7bc0a37a-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 35.5999ms
+2024-10-23 14:35:40.913 +03:00 [INF] 00-0c2624467624411545ea457effd6d2ab-1cb269a8e3257a2a-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:35:40.913 +03:00 [INF] 00-9579b3076ae5730facba714612a39f16-ee05c055f057c4ab-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:35:40.914 +03:00 [INF] 00-0c2624467624411545ea457effd6d2ab-1cb269a8e3257a2a-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:40 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:35:40.914 +03:00 [INF] 00-9579b3076ae5730facba714612a39f16-ee05c055f057c4ab-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:40 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:35:40.914 +03:00 [INF] 00-0c2624467624411545ea457effd6d2ab-1cb269a8e3257a2a-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:40 AM'.
+2024-10-23 14:35:40.915 +03:00 [INF] 00-9579b3076ae5730facba714612a39f16-ee05c055f057c4ab-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:40 AM'.
+2024-10-23 14:35:40.915 +03:00 [INF] 00-0c2624467624411545ea457effd6d2ab-1cb269a8e3257a2a-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:40.916 +03:00 [INF] 00-9579b3076ae5730facba714612a39f16-ee05c055f057c4ab-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:40.916 +03:00 [INF] 00-0c2624467624411545ea457effd6d2ab-1cb269a8e3257a2a-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:40.916 +03:00 [INF] 00-9579b3076ae5730facba714612a39f16-ee05c055f057c4ab-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:40.917 +03:00 [INF] 00-0c2624467624411545ea457effd6d2ab-1cb269a8e3257a2a-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 3.5245ms
+2024-10-23 14:35:40.917 +03:00 [INF] 00-9579b3076ae5730facba714612a39f16-ee05c055f057c4ab-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 3.6492ms
+2024-10-23 14:35:49.830 +03:00 [INF] 00-cf155db9133c6f79dba999942d0f8945-6056685941101923-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:35:49.831 +03:00 [INF] 00-cf155db9133c6f79dba999942d0f8945-6056685941101923-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:49 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:35:49.832 +03:00 [INF] 00-cf155db9133c6f79dba999942d0f8945-6056685941101923-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:49 AM'.
+2024-10-23 14:35:49.833 +03:00 [INF] 00-cf155db9133c6f79dba999942d0f8945-6056685941101923-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:49.833 +03:00 [INF] 00-cf155db9133c6f79dba999942d0f8945-6056685941101923-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:49.833 +03:00 [INF] 00-cf155db9133c6f79dba999942d0f8945-6056685941101923-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 3.5245ms
+2024-10-23 14:35:49.834 +03:00 [INF] 00-65412a5dfcc7c06d2146f0b35ea84e65-1cc8fb6782547f69-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:35:49.834 +03:00 [INF] 00-d1cb0302621a5ae8d6575007048bf2c6-8aebc030077f9c46-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:35:49.834 +03:00 [INF] 00-65412a5dfcc7c06d2146f0b35ea84e65-1cc8fb6782547f69-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:49 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:35:49.834 +03:00 [INF] 00-d1cb0302621a5ae8d6575007048bf2c6-8aebc030077f9c46-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:49 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:35:49.834 +03:00 [INF] 00-65412a5dfcc7c06d2146f0b35ea84e65-1cc8fb6782547f69-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:49 AM'.
+2024-10-23 14:35:49.835 +03:00 [INF] 00-d1cb0302621a5ae8d6575007048bf2c6-8aebc030077f9c46-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:35:49 AM'.
+2024-10-23 14:35:49.835 +03:00 [INF] 00-65412a5dfcc7c06d2146f0b35ea84e65-1cc8fb6782547f69-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:49.835 +03:00 [INF] 00-d1cb0302621a5ae8d6575007048bf2c6-8aebc030077f9c46-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:49.836 +03:00 [INF] 00-65412a5dfcc7c06d2146f0b35ea84e65-1cc8fb6782547f69-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:49.836 +03:00 [INF] 00-d1cb0302621a5ae8d6575007048bf2c6-8aebc030077f9c46-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:35:49.836 +03:00 [INF] 00-65412a5dfcc7c06d2146f0b35ea84e65-1cc8fb6782547f69-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 2.7311ms
+2024-10-23 14:35:49.837 +03:00 [INF] 00-d1cb0302621a5ae8d6575007048bf2c6-8aebc030077f9c46-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 3.2847ms
+2024-10-23 14:36:10.726 +03:00 [INF] 00-cc1990b162f8ea50d645e07a9edd068f-0a86e84148b97f81-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:36:10.727 +03:00 [INF] 00-cc1990b162f8ea50d645e07a9edd068f-0a86e84148b97f81-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:10 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:10.727 +03:00 [INF] 00-cc1990b162f8ea50d645e07a9edd068f-0a86e84148b97f81-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:10 AM'.
+2024-10-23 14:36:10.727 +03:00 [INF] 00-cc1990b162f8ea50d645e07a9edd068f-0a86e84148b97f81-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:10.727 +03:00 [INF] 00-cc1990b162f8ea50d645e07a9edd068f-0a86e84148b97f81-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:10.728 +03:00 [INF] 00-cc1990b162f8ea50d645e07a9edd068f-0a86e84148b97f81-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.7093ms
+2024-10-23 14:36:10.729 +03:00 [INF] 00-ee7aef1b978dcf28782c16189351ec0e-0fccab34db7640b0-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:36:10.729 +03:00 [INF] 00-803cb7fe5d40694e12749e08d2df7541-f123f99ad4e2491b-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:36:10.729 +03:00 [INF] 00-ee7aef1b978dcf28782c16189351ec0e-0fccab34db7640b0-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:10 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:10.730 +03:00 [INF] 00-803cb7fe5d40694e12749e08d2df7541-f123f99ad4e2491b-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:10 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:10.730 +03:00 [INF] 00-ee7aef1b978dcf28782c16189351ec0e-0fccab34db7640b0-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:10 AM'.
+2024-10-23 14:36:10.730 +03:00 [INF] 00-803cb7fe5d40694e12749e08d2df7541-f123f99ad4e2491b-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:10 AM'.
+2024-10-23 14:36:10.730 +03:00 [INF] 00-ee7aef1b978dcf28782c16189351ec0e-0fccab34db7640b0-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:10.730 +03:00 [INF] 00-803cb7fe5d40694e12749e08d2df7541-f123f99ad4e2491b-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:10.731 +03:00 [INF] 00-ee7aef1b978dcf28782c16189351ec0e-0fccab34db7640b0-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:10.731 +03:00 [INF] 00-803cb7fe5d40694e12749e08d2df7541-f123f99ad4e2491b-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:10.732 +03:00 [INF] 00-803cb7fe5d40694e12749e08d2df7541-f123f99ad4e2491b-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 3.3624ms
+2024-10-23 14:36:10.732 +03:00 [INF] 00-ee7aef1b978dcf28782c16189351ec0e-0fccab34db7640b0-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 3.1672ms
+2024-10-23 14:36:18.788 +03:00 [INF] 00-982cc4e3427735573ded25b2b1815445-688e56eb1d4c3a46-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:36:18.789 +03:00 [INF] 00-982cc4e3427735573ded25b2b1815445-688e56eb1d4c3a46-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:18 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:18.790 +03:00 [INF] 00-982cc4e3427735573ded25b2b1815445-688e56eb1d4c3a46-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:18 AM'.
+2024-10-23 14:36:18.790 +03:00 [INF] 00-982cc4e3427735573ded25b2b1815445-688e56eb1d4c3a46-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:18.790 +03:00 [INF] 00-982cc4e3427735573ded25b2b1815445-688e56eb1d4c3a46-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:18.790 +03:00 [INF] 00-982cc4e3427735573ded25b2b1815445-688e56eb1d4c3a46-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 2.0188ms
+2024-10-23 14:36:18.791 +03:00 [INF] 00-b88863b2c297889546bf50b6ab90cc5a-c9277c10053b2fe4-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:36:18.791 +03:00 [INF] 00-2f2885c14598860ecea4fe00d85b6b99-6ec5f9a8afb9df63-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:36:18.792 +03:00 [INF] 00-b88863b2c297889546bf50b6ab90cc5a-c9277c10053b2fe4-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:18 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:18.792 +03:00 [INF] 00-b88863b2c297889546bf50b6ab90cc5a-c9277c10053b2fe4-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:18 AM'.
+2024-10-23 14:36:18.792 +03:00 [INF] 00-b88863b2c297889546bf50b6ab90cc5a-c9277c10053b2fe4-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:18.792 +03:00 [INF] 00-2f2885c14598860ecea4fe00d85b6b99-6ec5f9a8afb9df63-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:18 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:18.793 +03:00 [INF] 00-b88863b2c297889546bf50b6ab90cc5a-c9277c10053b2fe4-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:18.793 +03:00 [INF] 00-2f2885c14598860ecea4fe00d85b6b99-6ec5f9a8afb9df63-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:18 AM'.
+2024-10-23 14:36:18.793 +03:00 [INF] 00-b88863b2c297889546bf50b6ab90cc5a-c9277c10053b2fe4-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.6683ms
+2024-10-23 14:36:18.793 +03:00 [INF] 00-2f2885c14598860ecea4fe00d85b6b99-6ec5f9a8afb9df63-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:18.795 +03:00 [INF] 00-2f2885c14598860ecea4fe00d85b6b99-6ec5f9a8afb9df63-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:18.795 +03:00 [INF] 00-2f2885c14598860ecea4fe00d85b6b99-6ec5f9a8afb9df63-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 3.4965ms
+2024-10-23 14:36:28.125 +03:00 [INF] 00-8aefc9fd33fedcaf29cc2844b91f454b-7709fd2b069ed61f-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:36:28.126 +03:00 [INF] 00-8aefc9fd33fedcaf29cc2844b91f454b-7709fd2b069ed61f-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:28 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:28.127 +03:00 [INF] 00-8aefc9fd33fedcaf29cc2844b91f454b-7709fd2b069ed61f-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:28 AM'.
+2024-10-23 14:36:28.127 +03:00 [INF] 00-8aefc9fd33fedcaf29cc2844b91f454b-7709fd2b069ed61f-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:28.127 +03:00 [INF] 00-8aefc9fd33fedcaf29cc2844b91f454b-7709fd2b069ed61f-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:28.127 +03:00 [INF] 00-8aefc9fd33fedcaf29cc2844b91f454b-7709fd2b069ed61f-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 2.8313ms
+2024-10-23 14:36:28.128 +03:00 [INF] 00-67a1a6aa312f2430f393a2457ffd6400-5c28b1e71a353e71-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:36:28.128 +03:00 [INF] 00-f56961c1430348f9adf008c4cb51c24f-97e430c6a9898e13-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 14:36:28.128 +03:00 [INF] 00-67a1a6aa312f2430f393a2457ffd6400-5c28b1e71a353e71-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:28 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:28.129 +03:00 [INF] 00-f56961c1430348f9adf008c4cb51c24f-97e430c6a9898e13-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:28 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:28.129 +03:00 [INF] 00-67a1a6aa312f2430f393a2457ffd6400-5c28b1e71a353e71-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:28 AM'.
+2024-10-23 14:36:28.129 +03:00 [INF] 00-f56961c1430348f9adf008c4cb51c24f-97e430c6a9898e13-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:28 AM'.
+2024-10-23 14:36:28.130 +03:00 [INF] 00-67a1a6aa312f2430f393a2457ffd6400-5c28b1e71a353e71-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:28.130 +03:00 [INF] 00-f56961c1430348f9adf008c4cb51c24f-97e430c6a9898e13-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:28.130 +03:00 [INF] 00-67a1a6aa312f2430f393a2457ffd6400-5c28b1e71a353e71-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:28.130 +03:00 [INF] 00-f56961c1430348f9adf008c4cb51c24f-97e430c6a9898e13-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 14:36:28.130 +03:00 [INF] 00-67a1a6aa312f2430f393a2457ffd6400-5c28b1e71a353e71-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 2.6016ms
+2024-10-23 14:36:28.131 +03:00 [INF] 00-f56961c1430348f9adf008c4cb51c24f-97e430c6a9898e13-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 2.7259ms
+2024-10-23 14:36:33.807 +03:00 [INF] 00-5dc06e393ee70771cc85cc60806ed2cc-835f3bcac7480d12-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ExportOrderCsv - application/grpc null
+2024-10-23 14:36:33.808 +03:00 [INF] 00-5dc06e393ee70771cc85cc60806ed2cc-835f3bcac7480d12-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:33 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:33.809 +03:00 [INF] 00-5dc06e393ee70771cc85cc60806ed2cc-835f3bcac7480d12-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:33 AM'.
+2024-10-23 14:36:33.809 +03:00 [INF] 00-5dc06e393ee70771cc85cc60806ed2cc-835f3bcac7480d12-00 Executing endpoint 'gRPC - /greet.v1.OrderImporter/ExportOrderCsv'
+2024-10-23 14:36:33.837 +03:00 [INF] 00-5dc06e393ee70771cc85cc60806ed2cc-835f3bcac7480d12-00 Exported 2 orders
+2024-10-23 14:36:33.839 +03:00 [INF] 00-5dc06e393ee70771cc85cc60806ed2cc-835f3bcac7480d12-00 Executed endpoint 'gRPC - /greet.v1.OrderImporter/ExportOrderCsv'
+2024-10-23 14:36:33.839 +03:00 [INF] 00-5dc06e393ee70771cc85cc60806ed2cc-835f3bcac7480d12-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ExportOrderCsv - 200 null application/grpc 32.6891ms
+2024-10-23 14:36:51.855 +03:00 [INF] 00-33e5efd4b5415806b0d919525d48ad2f-296d8de024fc23f6-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ImportOrderCsv - application/grpc null
+2024-10-23 14:36:51.858 +03:00 [INF] 00-33e5efd4b5415806b0d919525d48ad2f-296d8de024fc23f6-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:51 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 14:36:51.858 +03:00 [INF] 00-33e5efd4b5415806b0d919525d48ad2f-296d8de024fc23f6-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 11:36:51 AM'.
+2024-10-23 14:36:51.860 +03:00 [INF] 00-33e5efd4b5415806b0d919525d48ad2f-296d8de024fc23f6-00 Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-23 14:36:51.862 +03:00 [INF] 00-33e5efd4b5415806b0d919525d48ad2f-296d8de024fc23f6-00 AuthenticationScheme: Bearer was challenged.
+2024-10-23 14:36:51.863 +03:00 [INF] 00-33e5efd4b5415806b0d919525d48ad2f-296d8de024fc23f6-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ImportOrderCsv - 401 0 null 7.9177ms
+2024-10-23 14:37:38.653 +03:00 [INF] 00-3333a5add5fa014f009985351cf9e9a1-403c45e0e53bdc81-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:37:38.654 +03:00 [INF] 00-3333a5add5fa014f009985351cf9e9a1-403c45e0e53bdc81-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:37:38.659 +03:00 [INF] 00-3333a5add5fa014f009985351cf9e9a1-403c45e0e53bdc81-00 Authetntication request for Hakan from ipv4:127.0.0.1:58103
+2024-10-23 14:37:38.664 +03:00 [INF] 00-3333a5add5fa014f009985351cf9e9a1-403c45e0e53bdc81-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:37:38.664 +03:00 [INF] 00-3333a5add5fa014f009985351cf9e9a1-403c45e0e53bdc81-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 10.9713ms
+2024-10-23 14:40:42.856 +03:00 [INF] 00-c932d9a581c5b24ee87e7236227a7597-246609eb29e1b516-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:40:42.857 +03:00 [INF] 00-c932d9a581c5b24ee87e7236227a7597-246609eb29e1b516-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:40:42.858 +03:00 [INF] 00-c932d9a581c5b24ee87e7236227a7597-246609eb29e1b516-00 Authetntication request for Hakan from ipv4:127.0.0.1:58116
+2024-10-23 14:40:42.858 +03:00 [INF] 00-c932d9a581c5b24ee87e7236227a7597-246609eb29e1b516-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:40:42.858 +03:00 [INF] 00-c932d9a581c5b24ee87e7236227a7597-246609eb29e1b516-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.1961ms
+2024-10-23 14:42:44.782 +03:00 [INF] 00-4ddfe8d8300beb60249b6990878a0149-4bace282f6b1b6c6-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:42:44.784 +03:00 [INF] 00-4ddfe8d8300beb60249b6990878a0149-4bace282f6b1b6c6-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:42:44.784 +03:00 [INF] 00-4ddfe8d8300beb60249b6990878a0149-4bace282f6b1b6c6-00 Authetntication request for Hakan from ipv4:127.0.0.1:58124
+2024-10-23 14:42:44.784 +03:00 [INF] 00-4ddfe8d8300beb60249b6990878a0149-4bace282f6b1b6c6-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:42:44.785 +03:00 [INF] 00-4ddfe8d8300beb60249b6990878a0149-4bace282f6b1b6c6-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.8038ms
+2024-10-23 14:42:56.334 +03:00 [INF] 00-be5bd45b723eae9ee859ab4ed221dc8a-53af969dbe5c0341-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:42:56.335 +03:00 [INF] 00-be5bd45b723eae9ee859ab4ed221dc8a-53af969dbe5c0341-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:42:56.338 +03:00 [INF] 00-be5bd45b723eae9ee859ab4ed221dc8a-53af969dbe5c0341-00 Authetntication request for Hakan from ipv4:127.0.0.1:58127
+2024-10-23 14:42:56.338 +03:00 [INF] 00-be5bd45b723eae9ee859ab4ed221dc8a-53af969dbe5c0341-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:42:56.338 +03:00 [INF] 00-be5bd45b723eae9ee859ab4ed221dc8a-53af969dbe5c0341-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 4.5629ms
+2024-10-23 14:43:02.794 +03:00 [INF] 00-9330dc00323f98cabec52a104ebd2b67-669a9d199bbadfcb-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:43:02.795 +03:00 [INF] 00-9330dc00323f98cabec52a104ebd2b67-669a9d199bbadfcb-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:43:02.798 +03:00 [INF] 00-9330dc00323f98cabec52a104ebd2b67-669a9d199bbadfcb-00 Authetntication request for Hakan from ipv4:127.0.0.1:58128
+2024-10-23 14:43:02.798 +03:00 [INF] 00-9330dc00323f98cabec52a104ebd2b67-669a9d199bbadfcb-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:43:02.799 +03:00 [INF] 00-9330dc00323f98cabec52a104ebd2b67-669a9d199bbadfcb-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 4.5889ms
+2024-10-23 14:43:24.967 +03:00 [INF] 00-a605055f7ddd39a4a78ec5ef35d2223a-5214fbe8d001d9a3-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:43:24.968 +03:00 [INF] 00-a605055f7ddd39a4a78ec5ef35d2223a-5214fbe8d001d9a3-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:43:24.969 +03:00 [INF] 00-a605055f7ddd39a4a78ec5ef35d2223a-5214fbe8d001d9a3-00 Authetntication request for Hakan from ipv4:127.0.0.1:58129
+2024-10-23 14:43:24.969 +03:00 [INF] 00-a605055f7ddd39a4a78ec5ef35d2223a-5214fbe8d001d9a3-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:43:24.969 +03:00 [INF] 00-a605055f7ddd39a4a78ec5ef35d2223a-5214fbe8d001d9a3-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.0486ms
+2024-10-23 14:43:38.736 +03:00 [INF] 00-21c9cc5321b7c9e231e28a74ca14f2ad-8d9d60b3f2610a32-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:43:38.737 +03:00 [INF] 00-21c9cc5321b7c9e231e28a74ca14f2ad-8d9d60b3f2610a32-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:43:38.737 +03:00 [INF] 00-21c9cc5321b7c9e231e28a74ca14f2ad-8d9d60b3f2610a32-00 Authetntication request for Hakan from ipv4:127.0.0.1:58131
+2024-10-23 14:43:38.738 +03:00 [INF] 00-21c9cc5321b7c9e231e28a74ca14f2ad-8d9d60b3f2610a32-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:43:38.739 +03:00 [INF] 00-21c9cc5321b7c9e231e28a74ca14f2ad-8d9d60b3f2610a32-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.955ms
+2024-10-23 14:44:25.577 +03:00 [INF] 00-e0a56c0a8d5ac43f93b477bfe2c17c55-9345185d109bd9d6-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:44:25.578 +03:00 [INF] 00-e0a56c0a8d5ac43f93b477bfe2c17c55-9345185d109bd9d6-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:44:25.578 +03:00 [INF] 00-e0a56c0a8d5ac43f93b477bfe2c17c55-9345185d109bd9d6-00 Authetntication request for Hakan from ipv4:127.0.0.1:58133
+2024-10-23 14:44:25.578 +03:00 [INF] 00-e0a56c0a8d5ac43f93b477bfe2c17c55-9345185d109bd9d6-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:44:25.578 +03:00 [INF] 00-e0a56c0a8d5ac43f93b477bfe2c17c55-9345185d109bd9d6-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 1.0295ms
+2024-10-23 14:44:42.289 +03:00 [INF] 00-4e4183fbfd46dccde004b2bbe048a08b-1d5e24f1834c2a86-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:44:42.290 +03:00 [INF] 00-4e4183fbfd46dccde004b2bbe048a08b-1d5e24f1834c2a86-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:44:42.291 +03:00 [INF] 00-4e4183fbfd46dccde004b2bbe048a08b-1d5e24f1834c2a86-00 Authetntication request for Hakan from ipv4:127.0.0.1:58134
+2024-10-23 14:44:42.291 +03:00 [INF] 00-4e4183fbfd46dccde004b2bbe048a08b-1d5e24f1834c2a86-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:44:42.292 +03:00 [INF] 00-4e4183fbfd46dccde004b2bbe048a08b-1d5e24f1834c2a86-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.8996ms
+2024-10-23 14:44:50.865 +03:00 [INF] 00-930ae5c223f009ce40221cca2fcd5bf2-9707647dc8d79580-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:44:50.868 +03:00 [INF] 00-930ae5c223f009ce40221cca2fcd5bf2-9707647dc8d79580-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:44:50.868 +03:00 [INF] 00-930ae5c223f009ce40221cca2fcd5bf2-9707647dc8d79580-00 Authetntication request for Hakan from ipv4:127.0.0.1:58136
+2024-10-23 14:44:50.868 +03:00 [INF] 00-930ae5c223f009ce40221cca2fcd5bf2-9707647dc8d79580-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:44:50.869 +03:00 [INF] 00-930ae5c223f009ce40221cca2fcd5bf2-9707647dc8d79580-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 3.3824ms
+2024-10-23 14:46:50.185 +03:00 [INF] 00-8b7ed9371dfe3b76d1d287e843486e06-9bda4ffccaf76bec-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:46:50.187 +03:00 [INF] 00-8b7ed9371dfe3b76d1d287e843486e06-9bda4ffccaf76bec-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:46:50.187 +03:00 [INF] 00-8b7ed9371dfe3b76d1d287e843486e06-9bda4ffccaf76bec-00 Authetntication request for Hakan from ipv4:127.0.0.1:58141
+2024-10-23 14:46:50.188 +03:00 [INF] 00-8b7ed9371dfe3b76d1d287e843486e06-9bda4ffccaf76bec-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:46:50.188 +03:00 [INF] 00-8b7ed9371dfe3b76d1d287e843486e06-9bda4ffccaf76bec-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.4263ms
+2024-10-23 14:49:21.045 +03:00 [INF] 00-21438c240638308429a3f1f17955f5e8-941bfc010b6515de-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:49:21.049 +03:00 [INF] 00-21438c240638308429a3f1f17955f5e8-941bfc010b6515de-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:49:21.050 +03:00 [INF] 00-21438c240638308429a3f1f17955f5e8-941bfc010b6515de-00 Authetntication request for Hakan from ipv4:127.0.0.1:58155
+2024-10-23 14:49:21.051 +03:00 [INF] 00-21438c240638308429a3f1f17955f5e8-941bfc010b6515de-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:49:21.051 +03:00 [INF] 00-21438c240638308429a3f1f17955f5e8-941bfc010b6515de-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 6.2897ms
+2024-10-23 14:49:58.794 +03:00 [INF] 00-3e676a598120992abcbe03439d37dc0c-b1f2eb11eb91c2f6-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:49:58.795 +03:00 [INF] 00-3e676a598120992abcbe03439d37dc0c-b1f2eb11eb91c2f6-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:49:58.796 +03:00 [INF] 00-3e676a598120992abcbe03439d37dc0c-b1f2eb11eb91c2f6-00 Authetntication request for Hakan from ipv4:127.0.0.1:58160
+2024-10-23 14:49:58.796 +03:00 [INF] 00-3e676a598120992abcbe03439d37dc0c-b1f2eb11eb91c2f6-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:49:58.796 +03:00 [INF] 00-3e676a598120992abcbe03439d37dc0c-b1f2eb11eb91c2f6-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.2079ms
+2024-10-23 14:50:48.310 +03:00 [INF] 00-7c59ec39e48731c2e60e970ab35041df-836505439af85506-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:50:48.311 +03:00 [INF] 00-7c59ec39e48731c2e60e970ab35041df-836505439af85506-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:50:48.311 +03:00 [INF] 00-7c59ec39e48731c2e60e970ab35041df-836505439af85506-00 Authetntication request for Hakan from ipv4:127.0.0.1:58162
+2024-10-23 14:50:48.312 +03:00 [INF] 00-7c59ec39e48731c2e60e970ab35041df-836505439af85506-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:50:48.312 +03:00 [INF] 00-7c59ec39e48731c2e60e970ab35041df-836505439af85506-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 1.8034ms
+2024-10-23 14:50:55.074 +03:00 [INF] 00-4d91c545a904e00d27b0c4a0bcc045b1-98d89078012f000f-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:50:55.075 +03:00 [INF] 00-4d91c545a904e00d27b0c4a0bcc045b1-98d89078012f000f-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:50:55.075 +03:00 [INF] 00-4d91c545a904e00d27b0c4a0bcc045b1-98d89078012f000f-00 Authetntication request for Hakan from ipv4:127.0.0.1:58164
+2024-10-23 14:50:55.076 +03:00 [INF] 00-4d91c545a904e00d27b0c4a0bcc045b1-98d89078012f000f-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:50:55.076 +03:00 [INF] 00-4d91c545a904e00d27b0c4a0bcc045b1-98d89078012f000f-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.5057ms
+2024-10-23 14:53:34.802 +03:00 [INF] 00-56758c8b4acef16b40ed9b45e1310c98-c2e068dec0bcfc80-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:53:34.804 +03:00 [INF] 00-56758c8b4acef16b40ed9b45e1310c98-c2e068dec0bcfc80-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:53:34.804 +03:00 [INF] 00-56758c8b4acef16b40ed9b45e1310c98-c2e068dec0bcfc80-00 Authetntication request for Hakan from ipv4:127.0.0.1:58169
+2024-10-23 14:53:34.804 +03:00 [INF] 00-56758c8b4acef16b40ed9b45e1310c98-c2e068dec0bcfc80-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:53:34.805 +03:00 [INF] 00-56758c8b4acef16b40ed9b45e1310c98-c2e068dec0bcfc80-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.428ms
+2024-10-23 14:54:02.918 +03:00 [INF] 00-1cf84c048e6063453f635b70314889c6-3678e16f832e6ee2-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:54:02.920 +03:00 [INF] 00-1cf84c048e6063453f635b70314889c6-3678e16f832e6ee2-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:54:02.921 +03:00 [INF] 00-1cf84c048e6063453f635b70314889c6-3678e16f832e6ee2-00 Authetntication request for Hakan from ipv4:127.0.0.1:58172
+2024-10-23 14:54:02.921 +03:00 [INF] 00-1cf84c048e6063453f635b70314889c6-3678e16f832e6ee2-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:54:02.921 +03:00 [INF] 00-1cf84c048e6063453f635b70314889c6-3678e16f832e6ee2-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 3.044ms
+2024-10-23 14:54:10.399 +03:00 [INF] 00-486b500855fd18efcaea63a9217011ae-356f6d2b4ea70a03-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:54:10.400 +03:00 [INF] 00-486b500855fd18efcaea63a9217011ae-356f6d2b4ea70a03-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:54:10.401 +03:00 [INF] 00-486b500855fd18efcaea63a9217011ae-356f6d2b4ea70a03-00 Authetntication request for Hakan from ipv4:127.0.0.1:58173
+2024-10-23 14:54:10.402 +03:00 [INF] 00-486b500855fd18efcaea63a9217011ae-356f6d2b4ea70a03-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:54:10.402 +03:00 [INF] 00-486b500855fd18efcaea63a9217011ae-356f6d2b4ea70a03-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.7618ms
+2024-10-23 14:56:15.981 +03:00 [INF] 00-402f37b6648cc0d4299456668d78f32d-8b26d7713a341bb3-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:56:15.983 +03:00 [INF] 00-402f37b6648cc0d4299456668d78f32d-8b26d7713a341bb3-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:56:15.984 +03:00 [INF] 00-402f37b6648cc0d4299456668d78f32d-8b26d7713a341bb3-00 Authetntication request for Hakan from ipv4:127.0.0.1:58179
+2024-10-23 14:56:15.984 +03:00 [INF] 00-402f37b6648cc0d4299456668d78f32d-8b26d7713a341bb3-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:56:15.984 +03:00 [INF] 00-402f37b6648cc0d4299456668d78f32d-8b26d7713a341bb3-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.9617ms
+2024-10-23 14:56:54.710 +03:00 [INF] 00-62d8e967106fa10e4738d75f1a621302-0762e168f009ff73-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:56:54.713 +03:00 [INF] 00-62d8e967106fa10e4738d75f1a621302-0762e168f009ff73-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:56:54.713 +03:00 [INF] 00-62d8e967106fa10e4738d75f1a621302-0762e168f009ff73-00 Authetntication request for Hakan from ipv4:127.0.0.1:58190
+2024-10-23 14:56:54.714 +03:00 [INF] 00-62d8e967106fa10e4738d75f1a621302-0762e168f009ff73-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:56:54.714 +03:00 [INF] 00-62d8e967106fa10e4738d75f1a621302-0762e168f009ff73-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 3.5214ms
+2024-10-23 14:57:42.002 +03:00 [INF] 00-d8701dd2e3f7f02a0a60c2b583198a46-eb5d597d010a33ff-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:57:42.002 +03:00 [INF] 00-d8701dd2e3f7f02a0a60c2b583198a46-eb5d597d010a33ff-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:57:42.002 +03:00 [INF] 00-d8701dd2e3f7f02a0a60c2b583198a46-eb5d597d010a33ff-00 Authetntication request for Hakan from ipv4:127.0.0.1:58193
+2024-10-23 14:57:42.003 +03:00 [INF] 00-d8701dd2e3f7f02a0a60c2b583198a46-eb5d597d010a33ff-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:57:42.003 +03:00 [INF] 00-d8701dd2e3f7f02a0a60c2b583198a46-eb5d597d010a33ff-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 1.0222ms
+2024-10-23 14:57:48.706 +03:00 [INF] 00-0d305e86bbab0aa2f44ab562ccbac427-c90c03194a76d3b7-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:57:48.707 +03:00 [INF] 00-0d305e86bbab0aa2f44ab562ccbac427-c90c03194a76d3b7-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:57:48.707 +03:00 [INF] 00-0d305e86bbab0aa2f44ab562ccbac427-c90c03194a76d3b7-00 Authetntication request for Hakan from ipv4:127.0.0.1:58198
+2024-10-23 14:57:48.708 +03:00 [INF] 00-0d305e86bbab0aa2f44ab562ccbac427-c90c03194a76d3b7-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:57:48.708 +03:00 [INF] 00-0d305e86bbab0aa2f44ab562ccbac427-c90c03194a76d3b7-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 1.8592ms
+2024-10-23 14:57:58.849 +03:00 [INF] 00-bee72397a6ed8fefe670717cc22fd69e-50469c8018150a1c-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:57:58.849 +03:00 [INF] 00-bee72397a6ed8fefe670717cc22fd69e-50469c8018150a1c-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:57:58.850 +03:00 [INF] 00-bee72397a6ed8fefe670717cc22fd69e-50469c8018150a1c-00 Authetntication request for Hakan from ipv4:127.0.0.1:58201
+2024-10-23 14:57:58.850 +03:00 [INF] 00-bee72397a6ed8fefe670717cc22fd69e-50469c8018150a1c-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:57:58.851 +03:00 [INF] 00-bee72397a6ed8fefe670717cc22fd69e-50469c8018150a1c-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 1.9086ms
+2024-10-23 14:59:15.097 +03:00 [INF] 00-f1beb7e600deff61b7a58f56211867cb-38baa48a0451595a-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:59:15.098 +03:00 [INF] 00-f1beb7e600deff61b7a58f56211867cb-38baa48a0451595a-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:59:15.098 +03:00 [INF] 00-f1beb7e600deff61b7a58f56211867cb-38baa48a0451595a-00 Authetntication request for Hakan from ipv4:127.0.0.1:58203
+2024-10-23 14:59:15.099 +03:00 [INF] 00-f1beb7e600deff61b7a58f56211867cb-38baa48a0451595a-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:59:15.100 +03:00 [INF] 00-f1beb7e600deff61b7a58f56211867cb-38baa48a0451595a-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 3.0417ms
+2024-10-23 14:59:28.947 +03:00 [INF] 00-82d7aacbab2fd0d7a06acfed70327486-21ee3afb2031cc5d-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:59:28.948 +03:00 [INF] 00-82d7aacbab2fd0d7a06acfed70327486-21ee3afb2031cc5d-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:59:28.949 +03:00 [INF] 00-82d7aacbab2fd0d7a06acfed70327486-21ee3afb2031cc5d-00 Authetntication request for Hakan from ipv4:127.0.0.1:58204
+2024-10-23 14:59:28.949 +03:00 [INF] 00-82d7aacbab2fd0d7a06acfed70327486-21ee3afb2031cc5d-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:59:28.950 +03:00 [INF] 00-82d7aacbab2fd0d7a06acfed70327486-21ee3afb2031cc5d-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.595ms
+2024-10-23 14:59:35.138 +03:00 [INF] 00-3546a8d6c059da798b498ce2d2e052ef-8f565e81c9a320ab-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:59:35.139 +03:00 [INF] 00-3546a8d6c059da798b498ce2d2e052ef-8f565e81c9a320ab-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:59:35.140 +03:00 [INF] 00-3546a8d6c059da798b498ce2d2e052ef-8f565e81c9a320ab-00 Authetntication request for Hakan from ipv4:127.0.0.1:58205
+2024-10-23 14:59:35.140 +03:00 [INF] 00-3546a8d6c059da798b498ce2d2e052ef-8f565e81c9a320ab-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:59:35.141 +03:00 [INF] 00-3546a8d6c059da798b498ce2d2e052ef-8f565e81c9a320ab-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.82ms
+2024-10-23 14:59:45.523 +03:00 [INF] 00-a90c04091047156abea112ab63ba90aa-0c00c738653f675f-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 14:59:45.524 +03:00 [INF] 00-a90c04091047156abea112ab63ba90aa-0c00c738653f675f-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:59:45.525 +03:00 [INF] 00-a90c04091047156abea112ab63ba90aa-0c00c738653f675f-00 Authetntication request for Hakan from ipv4:127.0.0.1:58206
+2024-10-23 14:59:45.525 +03:00 [INF] 00-a90c04091047156abea112ab63ba90aa-0c00c738653f675f-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 14:59:45.525 +03:00 [INF] 00-a90c04091047156abea112ab63ba90aa-0c00c738653f675f-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.2148ms
+2024-10-23 15:00:07.332 +03:00 [INF] 00-5767928e462bbccc24280cd6e7814ade-40daf1df6c2e0745-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 15:00:07.333 +03:00 [INF] 00-5767928e462bbccc24280cd6e7814ade-40daf1df6c2e0745-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:00:07.333 +03:00 [INF] 00-5767928e462bbccc24280cd6e7814ade-40daf1df6c2e0745-00 Authetntication request for Hakan from ipv4:127.0.0.1:58211
+2024-10-23 15:00:07.333 +03:00 [INF] 00-5767928e462bbccc24280cd6e7814ade-40daf1df6c2e0745-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:00:07.334 +03:00 [INF] 00-5767928e462bbccc24280cd6e7814ade-40daf1df6c2e0745-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 1.9294ms
+2024-10-23 15:00:41.862 +03:00 [INF] 00-982e5389319bd85aa301d36e1eba597e-6ec480bea329dd79-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 15:00:41.863 +03:00 [INF] 00-982e5389319bd85aa301d36e1eba597e-6ec480bea329dd79-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:00:41.863 +03:00 [INF] 00-982e5389319bd85aa301d36e1eba597e-6ec480bea329dd79-00 Authetntication request for Hakan from ipv4:127.0.0.1:58213
+2024-10-23 15:00:41.864 +03:00 [INF] 00-982e5389319bd85aa301d36e1eba597e-6ec480bea329dd79-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:00:41.865 +03:00 [INF] 00-982e5389319bd85aa301d36e1eba597e-6ec480bea329dd79-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 3.1225ms
+2024-10-23 15:00:46.573 +03:00 [INF] 00-906e59ecbd6757e454231e053b19b0b5-f58bbb883253641c-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 15:00:46.574 +03:00 [INF] 00-906e59ecbd6757e454231e053b19b0b5-f58bbb883253641c-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:00:46.575 +03:00 [INF] 00-906e59ecbd6757e454231e053b19b0b5-f58bbb883253641c-00 Authetntication request for Hakan from ipv4:127.0.0.1:58214
+2024-10-23 15:00:46.576 +03:00 [INF] 00-906e59ecbd6757e454231e053b19b0b5-f58bbb883253641c-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:00:46.577 +03:00 [INF] 00-906e59ecbd6757e454231e053b19b0b5-f58bbb883253641c-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 3.4559ms
+2024-10-23 15:01:17.408 +03:00 [INF] 00-ac15161f02a1acfbe159ce9c13c7ec68-c8de7ac26700620f-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 15:01:17.409 +03:00 [INF] 00-ac15161f02a1acfbe159ce9c13c7ec68-c8de7ac26700620f-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:01:17.409 +03:00 [INF] 00-ac15161f02a1acfbe159ce9c13c7ec68-c8de7ac26700620f-00 Authetntication request for Hakan from ipv4:127.0.0.1:58216
+2024-10-23 15:01:17.410 +03:00 [INF] 00-ac15161f02a1acfbe159ce9c13c7ec68-c8de7ac26700620f-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:01:17.412 +03:00 [INF] 00-ac15161f02a1acfbe159ce9c13c7ec68-c8de7ac26700620f-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 3.5769ms
+2024-10-23 15:01:25.953 +03:00 [INF] 00-cafaff893d43d2d725a20bb78dae875e-2b6d323468b41293-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 15:01:25.954 +03:00 [INF] 00-cafaff893d43d2d725a20bb78dae875e-2b6d323468b41293-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:01:25.955 +03:00 [INF] 00-cafaff893d43d2d725a20bb78dae875e-2b6d323468b41293-00 Authetntication request for Hakan from ipv4:127.0.0.1:58217
+2024-10-23 15:01:25.955 +03:00 [INF] 00-cafaff893d43d2d725a20bb78dae875e-2b6d323468b41293-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:01:25.956 +03:00 [INF] 00-cafaff893d43d2d725a20bb78dae875e-2b6d323468b41293-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 2.6902ms
+2024-10-23 15:01:46.905 +03:00 [INF] 00-ea6c093069a0d25b815503621f1e55c1-be31542a6dd256f5-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 15:01:46.907 +03:00 [INF] 00-ea6c093069a0d25b815503621f1e55c1-be31542a6dd256f5-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:01:46.907 +03:00 [INF] 00-ea6c093069a0d25b815503621f1e55c1-be31542a6dd256f5-00 Authetntication request for Hakan from ipv4:127.0.0.1:58220
+2024-10-23 15:01:46.908 +03:00 [INF] 00-ea6c093069a0d25b815503621f1e55c1-be31542a6dd256f5-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:01:46.908 +03:00 [INF] 00-ea6c093069a0d25b815503621f1e55c1-be31542a6dd256f5-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 3.0341ms
+2024-10-23 15:03:18.795 +03:00 [INF] 00-766fa105440b6c7ca83d4b41bd2e7ff5-2ecc64f5d781bb43-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:18.796 +03:00 [INF] 00-766fa105440b6c7ca83d4b41bd2e7ff5-2ecc64f5d781bb43-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 12:03:18 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 15:03:18.797 +03:00 [INF] 00-766fa105440b6c7ca83d4b41bd2e7ff5-2ecc64f5d781bb43-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 12:03:18 PM'.
+2024-10-23 15:03:18.797 +03:00 [INF] 00-766fa105440b6c7ca83d4b41bd2e7ff5-2ecc64f5d781bb43-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:18.798 +03:00 [INF] 00-766fa105440b6c7ca83d4b41bd2e7ff5-2ecc64f5d781bb43-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:18.798 +03:00 [INF] 00-766fa105440b6c7ca83d4b41bd2e7ff5-2ecc64f5d781bb43-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 3.5002ms
+2024-10-23 15:03:18.799 +03:00 [INF] 00-451da332cf55231aaaa88a420d03c121-8e0c76a1cc623e62-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:18.799 +03:00 [INF] 00-56092e4715cfc165b84313c49b9a73ec-29220d3aa7effbb6-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:18.799 +03:00 [INF] 00-451da332cf55231aaaa88a420d03c121-8e0c76a1cc623e62-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 12:03:18 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 15:03:18.799 +03:00 [INF] 00-56092e4715cfc165b84313c49b9a73ec-29220d3aa7effbb6-00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 12:03:18 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-10-23 15:03:18.799 +03:00 [INF] 00-451da332cf55231aaaa88a420d03c121-8e0c76a1cc623e62-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 12:03:18 PM'.
+2024-10-23 15:03:18.800 +03:00 [INF] 00-56092e4715cfc165b84313c49b9a73ec-29220d3aa7effbb6-00 Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/23/2024 11:12:11 AM', Current time (UTC): '10/23/2024 12:03:18 PM'.
+2024-10-23 15:03:18.801 +03:00 [INF] 00-451da332cf55231aaaa88a420d03c121-8e0c76a1cc623e62-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:18.801 +03:00 [INF] 00-56092e4715cfc165b84313c49b9a73ec-29220d3aa7effbb6-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:18.801 +03:00 [INF] 00-451da332cf55231aaaa88a420d03c121-8e0c76a1cc623e62-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:18.801 +03:00 [INF] 00-56092e4715cfc165b84313c49b9a73ec-29220d3aa7effbb6-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:18.801 +03:00 [INF] 00-451da332cf55231aaaa88a420d03c121-8e0c76a1cc623e62-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 2.6207ms
+2024-10-23 15:03:18.802 +03:00 [INF] 00-56092e4715cfc165b84313c49b9a73ec-29220d3aa7effbb6-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 2.8326ms
+2024-10-23 15:03:23.738 +03:00 [INF] 00-c88562dab7e831a275d3236be65309a2-4ca3e2c90303ad66-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:23.744 +03:00 [INF] 00-c88562dab7e831a275d3236be65309a2-4ca3e2c90303ad66-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:23.744 +03:00 [INF] 00-c88562dab7e831a275d3236be65309a2-4ca3e2c90303ad66-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:23.745 +03:00 [INF] 00-c88562dab7e831a275d3236be65309a2-4ca3e2c90303ad66-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 6.443ms
+2024-10-23 15:03:23.745 +03:00 [INF] 00-648a880b07a21c2f2711bb537a03bbe6-9a1c0762c0ad8e62-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:23.745 +03:00 [INF] 00-1ab7773587bd314f489d343416a69fc1-f8125c293bb5b8c1-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:23.746 +03:00 [INF] 00-648a880b07a21c2f2711bb537a03bbe6-9a1c0762c0ad8e62-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:23.746 +03:00 [INF] 00-1ab7773587bd314f489d343416a69fc1-f8125c293bb5b8c1-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:23.746 +03:00 [INF] 00-648a880b07a21c2f2711bb537a03bbe6-9a1c0762c0ad8e62-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:23.746 +03:00 [INF] 00-1ab7773587bd314f489d343416a69fc1-f8125c293bb5b8c1-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:23.746 +03:00 [INF] 00-648a880b07a21c2f2711bb537a03bbe6-9a1c0762c0ad8e62-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.2019ms
+2024-10-23 15:03:23.747 +03:00 [INF] 00-1ab7773587bd314f489d343416a69fc1-f8125c293bb5b8c1-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.3117ms
+2024-10-23 15:03:27.880 +03:00 [INF] 00-99a71e93c9531d09b0a5431f97c31456-39ed43429a755a0b-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ExportOrderCsv - application/grpc null
+2024-10-23 15:03:27.880 +03:00 [INF] 00-99a71e93c9531d09b0a5431f97c31456-39ed43429a755a0b-00 Executing endpoint 'gRPC - /greet.v1.OrderImporter/ExportOrderCsv'
+2024-10-23 15:03:27.882 +03:00 [INF] 00-99a71e93c9531d09b0a5431f97c31456-39ed43429a755a0b-00 Exported 2 orders
+2024-10-23 15:03:27.883 +03:00 [INF] 00-99a71e93c9531d09b0a5431f97c31456-39ed43429a755a0b-00 Executed endpoint 'gRPC - /greet.v1.OrderImporter/ExportOrderCsv'
+2024-10-23 15:03:27.883 +03:00 [INF] 00-99a71e93c9531d09b0a5431f97c31456-39ed43429a755a0b-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ExportOrderCsv - 200 null application/grpc 3.1262ms
+2024-10-23 15:03:36.254 +03:00 [INF] 00-a379418f7c6d481fce93029d06583509-8468b9b0384ac2a7-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ImportOrderCsv - application/grpc null
+2024-10-23 15:03:36.257 +03:00 [INF] 00-a379418f7c6d481fce93029d06583509-8468b9b0384ac2a7-00 Executing endpoint 'gRPC - /greet.v1.OrderImporter/ImportOrderCsv'
+2024-10-23 15:03:36.272 +03:00 [INF] 00-a379418f7c6d481fce93029d06583509-8468b9b0384ac2a7-00 Imported 2 orders (non-streaming)
+2024-10-23 15:03:36.273 +03:00 [INF] 00-a379418f7c6d481fce93029d06583509-8468b9b0384ac2a7-00 Executed endpoint 'gRPC - /greet.v1.OrderImporter/ImportOrderCsv'
+2024-10-23 15:03:36.273 +03:00 [INF] 00-a379418f7c6d481fce93029d06583509-8468b9b0384ac2a7-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ImportOrderCsv - 200 null application/grpc 18.2392ms
+2024-10-23 15:03:42.355 +03:00 [INF] 00-01903776149f70426126cd4eec88c3d8-e7ca8e17b663d157-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:42.355 +03:00 [INF] 00-01903776149f70426126cd4eec88c3d8-e7ca8e17b663d157-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:42.355 +03:00 [INF] 00-01903776149f70426126cd4eec88c3d8-e7ca8e17b663d157-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:42.356 +03:00 [INF] 00-01903776149f70426126cd4eec88c3d8-e7ca8e17b663d157-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 0.8207ms
+2024-10-23 15:03:42.356 +03:00 [INF] 00-171c2d26e25e6834f703a309d01038a1-7fa3626ccda1b41d-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:42.356 +03:00 [INF] 00-e5ef0c37d584c627578a73d9b3537a87-c9ec891360e9ef2c-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:42.356 +03:00 [INF] 00-171c2d26e25e6834f703a309d01038a1-7fa3626ccda1b41d-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:42.356 +03:00 [INF] 00-e5ef0c37d584c627578a73d9b3537a87-c9ec891360e9ef2c-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:42.357 +03:00 [INF] 00-171c2d26e25e6834f703a309d01038a1-7fa3626ccda1b41d-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:42.357 +03:00 [INF] 00-e5ef0c37d584c627578a73d9b3537a87-c9ec891360e9ef2c-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:42.357 +03:00 [INF] 00-e5ef0c37d584c627578a73d9b3537a87-c9ec891360e9ef2c-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 0.9374ms
+2024-10-23 15:03:42.357 +03:00 [INF] 00-171c2d26e25e6834f703a309d01038a1-7fa3626ccda1b41d-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 0.9546ms
+2024-10-23 15:03:49.443 +03:00 [INF] 00-0a2b2d711275e067e9eaae1bf1d1ae74-beed347089379190-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:49.445 +03:00 [INF] 00-0a2b2d711275e067e9eaae1bf1d1ae74-beed347089379190-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:49.446 +03:00 [INF] 00-0a2b2d711275e067e9eaae1bf1d1ae74-beed347089379190-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:49.446 +03:00 [INF] 00-0a2b2d711275e067e9eaae1bf1d1ae74-beed347089379190-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 3.3223ms
+2024-10-23 15:03:49.448 +03:00 [INF] 00-5d83f0e675217087c6811604eb2639c4-00f8dbc60ef098d9-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:49.448 +03:00 [INF] 00-c8070e3537c6b95f5f294ca92517e3f7-b425df842a7c7cf5-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:03:49.448 +03:00 [INF] 00-5d83f0e675217087c6811604eb2639c4-00f8dbc60ef098d9-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:49.448 +03:00 [INF] 00-c8070e3537c6b95f5f294ca92517e3f7-b425df842a7c7cf5-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:49.449 +03:00 [INF] 00-5d83f0e675217087c6811604eb2639c4-00f8dbc60ef098d9-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:49.449 +03:00 [INF] 00-c8070e3537c6b95f5f294ca92517e3f7-b425df842a7c7cf5-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:03:49.449 +03:00 [INF] 00-5d83f0e675217087c6811604eb2639c4-00f8dbc60ef098d9-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.1855ms
+2024-10-23 15:03:49.449 +03:00 [INF] 00-c8070e3537c6b95f5f294ca92517e3f7-b425df842a7c7cf5-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.2931ms
+2024-10-23 15:08:01.730 +03:00 [INF] 00-0bd1142be4cb86790c88bfeeff7cd583-39b1af0737b91d61-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ImportOrderCsvStream - application/grpc null
+2024-10-23 15:08:01.733 +03:00 [INF] 00-0bd1142be4cb86790c88bfeeff7cd583-39b1af0737b91d61-00 Executing endpoint 'gRPC - /greet.v1.OrderImporter/ImportOrderCsvStream'
+2024-10-23 15:09:09.697 +03:00 [INF] 00-0bd1142be4cb86790c88bfeeff7cd583-39b1af0737b91d61-00 Imported 2 orders
+2024-10-23 15:09:09.699 +03:00 [INF] 00-0bd1142be4cb86790c88bfeeff7cd583-39b1af0737b91d61-00 Executed endpoint 'gRPC - /greet.v1.OrderImporter/ImportOrderCsvStream'
+2024-10-23 15:09:09.700 +03:00 [INF] 00-0bd1142be4cb86790c88bfeeff7cd583-39b1af0737b91d61-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ImportOrderCsvStream - 200 null application/grpc 67968.4355ms
+2024-10-23 15:09:21.395 +03:00 [INF] 00-b6633f751600ea86ed35dbe508917cd6-99c9d3204d36c595-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:09:21.395 +03:00 [INF] 00-b6633f751600ea86ed35dbe508917cd6-99c9d3204d36c595-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:21.395 +03:00 [INF] 00-b6633f751600ea86ed35dbe508917cd6-99c9d3204d36c595-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:21.396 +03:00 [INF] 00-b6633f751600ea86ed35dbe508917cd6-99c9d3204d36c595-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.0148ms
+2024-10-23 15:09:21.396 +03:00 [INF] 00-56ba48b52d4694e754f8ada57c836f10-75b1f47958ece71d-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:09:21.396 +03:00 [INF] 00-4b0cae9a5b32b63633f436417e689eae-290c992b6e29f7ec-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:09:21.396 +03:00 [INF] 00-56ba48b52d4694e754f8ada57c836f10-75b1f47958ece71d-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:21.396 +03:00 [INF] 00-4b0cae9a5b32b63633f436417e689eae-290c992b6e29f7ec-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:21.397 +03:00 [INF] 00-56ba48b52d4694e754f8ada57c836f10-75b1f47958ece71d-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:21.397 +03:00 [INF] 00-4b0cae9a5b32b63633f436417e689eae-290c992b6e29f7ec-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:21.397 +03:00 [INF] 00-56ba48b52d4694e754f8ada57c836f10-75b1f47958ece71d-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 0.8543ms
+2024-10-23 15:09:21.397 +03:00 [INF] 00-4b0cae9a5b32b63633f436417e689eae-290c992b6e29f7ec-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 0.9861ms
+2024-10-23 15:09:34.215 +03:00 [INF] 00-293054cd1ad9ffd282fc5f127fa00675-33e0cf1f7447c0bd-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:09:34.217 +03:00 [INF] 00-293054cd1ad9ffd282fc5f127fa00675-33e0cf1f7447c0bd-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:34.217 +03:00 [INF] 00-293054cd1ad9ffd282fc5f127fa00675-33e0cf1f7447c0bd-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:34.217 +03:00 [INF] 00-293054cd1ad9ffd282fc5f127fa00675-33e0cf1f7447c0bd-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 2.0421ms
+2024-10-23 15:09:34.218 +03:00 [INF] 00-320c4cff8e843be9ef0728cba9e7fa83-0a4c17856442c3bb-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:09:34.218 +03:00 [INF] 00-074a381c1d7dac2e65e6ccd90083a996-357af806403b9de1-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:09:34.219 +03:00 [INF] 00-320c4cff8e843be9ef0728cba9e7fa83-0a4c17856442c3bb-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:34.219 +03:00 [INF] 00-074a381c1d7dac2e65e6ccd90083a996-357af806403b9de1-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:34.219 +03:00 [INF] 00-320c4cff8e843be9ef0728cba9e7fa83-0a4c17856442c3bb-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:34.219 +03:00 [INF] 00-074a381c1d7dac2e65e6ccd90083a996-357af806403b9de1-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:09:34.220 +03:00 [INF] 00-320c4cff8e843be9ef0728cba9e7fa83-0a4c17856442c3bb-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.61ms
+2024-10-23 15:09:34.220 +03:00 [INF] 00-074a381c1d7dac2e65e6ccd90083a996-357af806403b9de1-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.7855ms
+2024-10-23 15:09:36.382 +03:00 [INF] 00-f8a24d0bf9c56a9499fbda6424aa2285-8006aa4fbd0a2a95-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ExportOrderCsvStream - application/grpc null
+2024-10-23 15:09:36.384 +03:00 [INF] 00-f8a24d0bf9c56a9499fbda6424aa2285-8006aa4fbd0a2a95-00 Executing endpoint 'gRPC - /greet.v1.OrderImporter/ExportOrderCsvStream'
+2024-10-23 15:09:36.390 +03:00 [INF] 00-f8a24d0bf9c56a9499fbda6424aa2285-8006aa4fbd0a2a95-00 Exported 2 orders (streaming)
+2024-10-23 15:09:36.391 +03:00 [INF] 00-f8a24d0bf9c56a9499fbda6424aa2285-8006aa4fbd0a2a95-00 Executed endpoint 'gRPC - /greet.v1.OrderImporter/ExportOrderCsvStream'
+2024-10-23 15:09:36.391 +03:00 [INF] 00-f8a24d0bf9c56a9499fbda6424aa2285-8006aa4fbd0a2a95-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ExportOrderCsvStream - 200 null application/grpc 8.5171ms
+2024-10-23 15:10:07.996 +03:00 [INF] 00-739d7d0ebb8cbce263e5769754b6a7a7-ae2c7ac17cd36d0b-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ExportOrderCsvStream - application/grpc null
+2024-10-23 15:10:07.997 +03:00 [INF] 00-739d7d0ebb8cbce263e5769754b6a7a7-ae2c7ac17cd36d0b-00 Executing endpoint 'gRPC - /greet.v1.OrderImporter/ExportOrderCsvStream'
+2024-10-23 15:10:08.001 +03:00 [INF] 00-739d7d0ebb8cbce263e5769754b6a7a7-ae2c7ac17cd36d0b-00 Exported 2 orders (streaming)
+2024-10-23 15:10:08.001 +03:00 [INF] 00-739d7d0ebb8cbce263e5769754b6a7a7-ae2c7ac17cd36d0b-00 Executed endpoint 'gRPC - /greet.v1.OrderImporter/ExportOrderCsvStream'
+2024-10-23 15:10:08.001 +03:00 [INF] 00-739d7d0ebb8cbce263e5769754b6a7a7-ae2c7ac17cd36d0b-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ExportOrderCsvStream - 200 null application/grpc 5.8517ms
+2024-10-23 15:11:00.588 +03:00 [INF]  Application is shutting down...
+2024-10-23 15:21:46.326 +03:00 [INF]  Starting web application
+2024-10-23 15:21:46.711 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 15:21:46.723 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 15:21:46.756 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 15:21:46.758 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:21:46.763 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:21:46.767 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 15:21:46.768 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 15:21:46.768 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 15:21:46.768 +03:00 [INF]  Hosting environment: Development
+2024-10-23 15:21:46.768 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 15:21:56.170 +03:00 [INF] 00-f9dfb96f79232a514e331090974b1fa8-ae16e03e1546453a-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 15:21:56.205 +03:00 [INF] 00-f9dfb96f79232a514e331090974b1fa8-ae16e03e1546453a-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:21:56.214 +03:00 [INF] 00-f9dfb96f79232a514e331090974b1fa8-ae16e03e1546453a-00 Authetntication request for Hakan from ipv4:127.0.0.1:58514
+2024-10-23 15:21:56.229 +03:00 [INF] 00-f9dfb96f79232a514e331090974b1fa8-ae16e03e1546453a-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:21:56.230 +03:00 [INF] 00-f9dfb96f79232a514e331090974b1fa8-ae16e03e1546453a-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 60.6405ms
+2024-10-23 15:22:04.633 +03:00 [INF] 00-515602f2a0e1e13999a673e42c47f8ad-5fe6000c9b3e4e6d-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:22:04.639 +03:00 [INF] 00-515602f2a0e1e13999a673e42c47f8ad-5fe6000c9b3e4e6d-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:22:04.652 +03:00 [INF] 00-515602f2a0e1e13999a673e42c47f8ad-5fe6000c9b3e4e6d-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:22:04.653 +03:00 [INF] 00-515602f2a0e1e13999a673e42c47f8ad-5fe6000c9b3e4e6d-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 19.6092ms
+2024-10-23 15:22:04.653 +03:00 [INF] 00-e5c5462d72cf7a45d6c72085907f25f0-a49142b2bca8c930-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:22:04.653 +03:00 [INF] 00-244c1e0011da05b389edbc6f905dd05c-d3d830e58c5afc67-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-23 15:22:04.656 +03:00 [INF] 00-244c1e0011da05b389edbc6f905dd05c-d3d830e58c5afc67-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:22:04.656 +03:00 [INF] 00-e5c5462d72cf7a45d6c72085907f25f0-a49142b2bca8c930-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:22:04.663 +03:00 [INF] 00-e5c5462d72cf7a45d6c72085907f25f0-a49142b2bca8c930-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:22:04.663 +03:00 [INF] 00-244c1e0011da05b389edbc6f905dd05c-d3d830e58c5afc67-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-23 15:22:04.664 +03:00 [INF] 00-e5c5462d72cf7a45d6c72085907f25f0-a49142b2bca8c930-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 10.5342ms
+2024-10-23 15:22:04.664 +03:00 [INF] 00-244c1e0011da05b389edbc6f905dd05c-d3d830e58c5afc67-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 10.8558ms
+2024-10-23 15:22:06.064 +03:00 [INF] 00-6110d1f1d178c1e8d79e8cf5764c3901-3d0b8082be59c631-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-23 15:22:06.065 +03:00 [INF] 00-6110d1f1d178c1e8d79e8cf5764c3901-3d0b8082be59c631-00 Executing endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:22:06.065 +03:00 [INF] 00-6110d1f1d178c1e8d79e8cf5764c3901-3d0b8082be59c631-00 Authetntication request for Hakan from ipv4:127.0.0.1:58518
+2024-10-23 15:22:06.066 +03:00 [INF] 00-6110d1f1d178c1e8d79e8cf5764c3901-3d0b8082be59c631-00 Executed endpoint 'gRPC - /greet.v1.Greeter/Authenticate'
+2024-10-23 15:22:06.066 +03:00 [INF] 00-6110d1f1d178c1e8d79e8cf5764c3901-3d0b8082be59c631-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 null application/grpc 1.7392ms
+2024-10-23 15:31:01.286 +03:00 [INF]  Application is shutting down...
+2024-10-23 15:37:57.518 +03:00 [INF]  Starting web application
+2024-10-23 15:37:57.886 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 15:37:57.899 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 15:37:57.927 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 15:37:57.929 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:37:57.934 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:37:57.938 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 15:37:57.938 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 15:37:57.938 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 15:37:57.938 +03:00 [INF]  Hosting environment: Development
+2024-10-23 15:37:57.938 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 15:38:02.204 +03:00 [INF] 00-f9ec4912764ed3905ffad5c9540f9626-55c2529ec83770eb-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:38:02.270 +03:00 [INF] 00-f9ec4912764ed3905ffad5c9540f9626-55c2529ec83770eb-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 67.7807ms
+2024-10-23 15:38:02.361 +03:00 [INF] 00-99a1f18c3e12c7d7bb316241968951fc-4ebb3582cf992a90-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:38:02.423 +03:00 [INF] 00-99a1f18c3e12c7d7bb316241968951fc-4ebb3582cf992a90-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.0729ms
+2024-10-23 15:38:09.205 +03:00 [INF]  Application is shutting down...
+2024-10-23 15:39:11.848 +03:00 [INF]  Starting web application
+2024-10-23 15:39:12.238 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 15:39:12.250 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 15:39:12.279 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 15:39:12.282 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:39:12.286 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:39:12.290 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 15:39:12.290 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 15:39:12.290 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 15:39:12.290 +03:00 [INF]  Hosting environment: Development
+2024-10-23 15:39:12.290 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 15:39:14.220 +03:00 [INF] 00-6f8d42d4843d08a32f891ab81fe0b619-aaee0945519595aa-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:39:14.289 +03:00 [INF] 00-6f8d42d4843d08a32f891ab81fe0b619-aaee0945519595aa-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 69.9757ms
+2024-10-23 15:39:14.321 +03:00 [INF] 00-bd0b29b72f374023ce50bc456a61330f-16a738f7cf6086a5-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:39:14.379 +03:00 [INF] 00-bd0b29b72f374023ce50bc456a61330f-16a738f7cf6086a5-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.7447ms
+2024-10-23 15:40:44.578 +03:00 [INF]  Application is shutting down...
+2024-10-23 15:40:54.291 +03:00 [INF]  Starting web application
+2024-10-23 15:40:54.655 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 15:40:54.667 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 15:40:54.691 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 15:40:54.694 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:40:54.698 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:40:54.702 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 15:40:54.702 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 15:40:54.702 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 15:40:54.702 +03:00 [INF]  Hosting environment: Development
+2024-10-23 15:40:54.703 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 15:40:58.089 +03:00 [INF] 00-7bdc87650a6f71aed9862b206771a68a-d64ab954c467eccc-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:40:58.153 +03:00 [INF] 00-7bdc87650a6f71aed9862b206771a68a-d64ab954c467eccc-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 64.7939ms
+2024-10-23 15:40:58.179 +03:00 [INF] 00-e8b91053ce216f06d49b806b201b51b3-f673e6ece3824a29-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:40:58.236 +03:00 [INF] 00-e8b91053ce216f06d49b806b201b51b3-f673e6ece3824a29-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.1538ms
+2024-10-23 15:41:05.990 +03:00 [INF] 00-9a6cb2f074645cf177cc29f703ea76dd-48a34c070fe8d129-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:41:05.998 +03:00 [INF] 00-9a6cb2f074645cf177cc29f703ea76dd-48a34c070fe8d129-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 7.5091ms
+2024-10-23 15:41:06.038 +03:00 [INF] 00-2e457c3bcd55bf7b758af6a87ee27600-7e7f4b232ea7cc3c-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:41:06.042 +03:00 [INF] 00-2e457c3bcd55bf7b758af6a87ee27600-7e7f4b232ea7cc3c-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.1905ms
+2024-10-23 15:41:25.103 +03:00 [INF]  Application is shutting down...
+2024-10-23 15:44:18.470 +03:00 [INF]  Starting web application
+2024-10-23 15:44:18.848 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 15:44:18.861 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 15:44:18.888 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 15:44:18.891 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:44:18.895 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:44:18.899 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 15:44:18.899 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 15:44:18.899 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 15:44:18.900 +03:00 [INF]  Hosting environment: Development
+2024-10-23 15:44:18.900 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 15:44:21.600 +03:00 [INF] 00-0dc00e246575a5e81f5afe524cf60e49-9594759a5a905d38-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:44:21.667 +03:00 [INF] 00-0dc00e246575a5e81f5afe524cf60e49-9594759a5a905d38-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 67.3356ms
+2024-10-23 15:44:21.693 +03:00 [INF] 00-8341ccc65132231166ab59f760c0fc0d-2a7802e3b256b8d2-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:44:21.751 +03:00 [INF] 00-8341ccc65132231166ab59f760c0fc0d-2a7802e3b256b8d2-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.3582ms
+2024-10-23 15:44:26.313 +03:00 [INF] 00-d538e8a233292563964b595d4b86de2d-4de19607ca25a8d6-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:44:26.319 +03:00 [INF] 00-d538e8a233292563964b595d4b86de2d-4de19607ca25a8d6-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 6.5742ms
+2024-10-23 15:44:26.359 +03:00 [INF] 00-1ace7b6a63a82e0b638ebc3cb01fe6aa-09ca4d58f1cec522-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:44:26.364 +03:00 [INF] 00-1ace7b6a63a82e0b638ebc3cb01fe6aa-09ca4d58f1cec522-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.6883ms
+2024-10-23 15:45:26.086 +03:00 [INF]  Application is shutting down...
+2024-10-23 15:45:32.932 +03:00 [INF]  Starting web application
+2024-10-23 15:45:33.284 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 15:45:33.296 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 15:45:33.322 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 15:45:33.325 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:45:33.329 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:45:33.333 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 15:45:33.333 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 15:45:33.333 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 15:45:33.334 +03:00 [INF]  Hosting environment: Development
+2024-10-23 15:45:33.334 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 15:45:36.126 +03:00 [INF] 00-920ad9c812b8eb75eaaaae430bba5c84-2a4a097e560481af-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:45:36.189 +03:00 [INF] 00-920ad9c812b8eb75eaaaae430bba5c84-2a4a097e560481af-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 64.0798ms
+2024-10-23 15:45:36.216 +03:00 [INF] 00-35959c745356c8fb2b6b335a049ca861-00a84ca5e66e42b0-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:45:36.273 +03:00 [INF] 00-35959c745356c8fb2b6b335a049ca861-00a84ca5e66e42b0-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.2995ms
+2024-10-23 15:45:49.817 +03:00 [INF] 00-c5a44136b552ba4260f13e0f1a2ce55f-c3c16c265d14210a-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:45:49.824 +03:00 [INF] 00-c5a44136b552ba4260f13e0f1a2ce55f-c3c16c265d14210a-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 6.6841ms
+2024-10-23 15:45:49.852 +03:00 [INF] 00-de63be9ddc7dc69b2368445ef9202d40-cecb213976c981f0-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:45:49.856 +03:00 [INF] 00-de63be9ddc7dc69b2368445ef9202d40-cecb213976c981f0-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.6117ms
+2024-10-23 15:47:39.265 +03:00 [INF]  Starting web application
+2024-10-23 15:47:39.656 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 15:47:39.669 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 15:47:39.704 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 15:47:39.707 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:47:39.711 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:47:39.716 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 15:47:39.716 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 15:47:39.716 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 15:47:39.716 +03:00 [INF]  Hosting environment: Development
+2024-10-23 15:47:39.716 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 15:47:42.773 +03:00 [INF] 00-6a00295f6398d72393f437193e20585b-c5929e3465363892-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:47:42.836 +03:00 [INF] 00-6a00295f6398d72393f437193e20585b-c5929e3465363892-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 63.9405ms
+2024-10-23 15:47:42.863 +03:00 [INF] 00-27715c05c2c226e9ef22494b4e112164-79594cba5d457735-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:47:42.921 +03:00 [INF] 00-27715c05c2c226e9ef22494b4e112164-79594cba5d457735-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.7594ms
+2024-10-23 15:49:39.322 +03:00 [INF]  Application is shutting down...
+2024-10-23 15:49:42.183 +03:00 [INF]  Starting web application
+2024-10-23 15:49:42.543 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 15:49:42.556 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 15:49:42.584 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 15:49:42.586 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:49:42.591 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:49:42.598 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 15:49:42.598 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 15:49:42.599 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 15:49:42.599 +03:00 [INF]  Hosting environment: Development
+2024-10-23 15:49:42.599 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 15:49:45.509 +03:00 [INF] 00-1597b5a401340d2890a2a0073f79b35d-97959e8a106440eb-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:49:45.603 +03:00 [INF] 00-1597b5a401340d2890a2a0073f79b35d-97959e8a106440eb-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 94.8622ms
+2024-10-23 15:49:45.635 +03:00 [INF] 00-0beacc60df030eabcd709d735f3d9731-001b05b101c6eed6-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:49:45.692 +03:00 [INF] 00-0beacc60df030eabcd709d735f3d9731-001b05b101c6eed6-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.2476ms
+2024-10-23 15:52:50.488 +03:00 [INF]  Application is shutting down...
+2024-10-23 15:52:57.594 +03:00 [INF]  Starting web application
+2024-10-23 15:52:57.992 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 15:52:58.006 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 15:52:58.030 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 15:52:58.033 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:52:58.038 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:52:58.042 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 15:52:58.042 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 15:52:58.042 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 15:52:58.042 +03:00 [INF]  Hosting environment: Development
+2024-10-23 15:52:58.043 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 15:53:00.149 +03:00 [INF] 00-ae24fbdc5cff372f96f0926801a738ec-6d3984592a6abb8f-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:53:00.209 +03:00 [INF] 00-ae24fbdc5cff372f96f0926801a738ec-6d3984592a6abb8f-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 60.6703ms
+2024-10-23 15:53:00.238 +03:00 [INF] 00-0a4f8f8aa5b6366ab7ad659030da81b7-49b0638fca32c089-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:53:00.298 +03:00 [INF] 00-0a4f8f8aa5b6366ab7ad659030da81b7-49b0638fca32c089-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.4796ms
+2024-10-23 15:53:17.842 +03:00 [INF]  Application is shutting down...
+2024-10-23 15:53:20.132 +03:00 [INF]  Starting web application
+2024-10-23 15:53:20.495 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-23 15:53:20.510 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-23 15:53:20.537 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-23 15:53:20.539 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:53:20.544 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-23 15:53:20.548 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-23 15:53:20.548 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-23 15:53:20.548 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-23 15:53:20.548 +03:00 [INF]  Hosting environment: Development
+2024-10-23 15:53:20.548 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/GrpcCrudExample
+2024-10-23 15:53:22.905 +03:00 [INF] 00-bb41bf27daf76a2098987b7a809be781-e4edc9171cc6b0ce-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-23 15:53:23.004 +03:00 [INF] 00-bb41bf27daf76a2098987b7a809be781-e4edc9171cc6b0ce-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 99.6903ms
+2024-10-23 15:53:23.082 +03:00 [INF] 00-8015d260f25d561ba7d560d5d422b446-791d6aaf92c5f62b-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-23 15:53:23.140 +03:00 [INF] 00-8015d260f25d561ba7d560d5d422b446-791d6aaf92c5f62b-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.0817ms
+2024-10-23 16:00:38.414 +03:00 [INF]  Application is shutting down...

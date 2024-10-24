@@ -1,0 +1,152 @@
+2024-10-24 16:57:35.070 +03:00 [INF]  Starting web application
+2024-10-24 16:57:35.480 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-24 16:57:35.496 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-24 16:57:35.529 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-24 16:57:35.532 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-24 16:57:35.536 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-24 16:57:35.540 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-24 16:57:35.541 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-24 16:57:35.541 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-24 16:57:35.541 +03:00 [INF]  Hosting environment: Development
+2024-10-24 16:57:35.541 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/grpc-crud-example
+2024-10-24 16:57:41.292 +03:00 [INF] 00-c1d0a5378f253f2406a73367ab0cc405-369b77fd86f165c6-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - application/grpc null
+2024-10-24 16:57:41.324 +03:00 [INF] 00-c1d0a5378f253f2406a73367ab0cc405-369b77fd86f165c6-00 Executing endpoint 'gRPC - Unimplemented method for greet.v1.Greeter'
+2024-10-24 16:57:41.325 +03:00 [INF] 00-c1d0a5378f253f2406a73367ab0cc405-369b77fd86f165c6-00 Method 'Authenticate' is unimplemented.
+2024-10-24 16:57:41.326 +03:00 [INF] 00-c1d0a5378f253f2406a73367ab0cc405-369b77fd86f165c6-00 Executed endpoint 'gRPC - Unimplemented method for greet.v1.Greeter'
+2024-10-24 16:57:41.328 +03:00 [INF] 00-c1d0a5378f253f2406a73367ab0cc405-369b77fd86f165c6-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/Authenticate - 200 0 application/grpc 36.6861ms
+2024-10-24 16:58:13.742 +03:00 [INF] 00-b3ea73897c6285bd7074868f95f2860b-6023b606c037c43c-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:13.745 +03:00 [INF] 00-b3ea73897c6285bd7074868f95f2860b-6023b606c037c43c-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:13.772 +03:00 [INF] 00-b3ea73897c6285bd7074868f95f2860b-6023b606c037c43c-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:13.772 +03:00 [INF] 00-5bda5a8e66939b02212480c7447c037b-4784015301dd6a5a-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:13.772 +03:00 [INF] 00-80d6e86c2774a3792d27fd79cf778caa-e2d519234ec31c03-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:13.772 +03:00 [INF] 00-b3ea73897c6285bd7074868f95f2860b-6023b606c037c43c-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 29.9327ms
+2024-10-24 16:58:13.772 +03:00 [INF] 00-fcc9c3163589c7ab10737b49820a7a8b-77cfc6a729fda55b-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:13.774 +03:00 [INF] 00-5bda5a8e66939b02212480c7447c037b-4784015301dd6a5a-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:13.774 +03:00 [INF] 00-80d6e86c2774a3792d27fd79cf778caa-e2d519234ec31c03-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:13.774 +03:00 [INF] 00-fcc9c3163589c7ab10737b49820a7a8b-77cfc6a729fda55b-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:13.782 +03:00 [INF] 00-fcc9c3163589c7ab10737b49820a7a8b-77cfc6a729fda55b-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:13.782 +03:00 [INF] 00-80d6e86c2774a3792d27fd79cf778caa-e2d519234ec31c03-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:13.782 +03:00 [INF] 00-5bda5a8e66939b02212480c7447c037b-4784015301dd6a5a-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:13.782 +03:00 [INF] 00-fcc9c3163589c7ab10737b49820a7a8b-77cfc6a729fda55b-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 10.1871ms
+2024-10-24 16:58:13.783 +03:00 [INF] 00-80d6e86c2774a3792d27fd79cf778caa-e2d519234ec31c03-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 10.5943ms
+2024-10-24 16:58:13.783 +03:00 [INF] 00-5bda5a8e66939b02212480c7447c037b-4784015301dd6a5a-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 10.8587ms
+2024-10-24 16:58:21.334 +03:00 [INF] 00-22adc4f01ab020a251ed3d3283b067df-c8adb7bd5a0ba186-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Auth/Authenticate - application/grpc null
+2024-10-24 16:58:21.335 +03:00 [INF] 00-22adc4f01ab020a251ed3d3283b067df-c8adb7bd5a0ba186-00 Executing endpoint 'gRPC - /greet.v1.Auth/Authenticate'
+2024-10-24 16:58:21.343 +03:00 [INF] 00-22adc4f01ab020a251ed3d3283b067df-c8adb7bd5a0ba186-00 Authetntication request for Hakan from ipv4:127.0.0.1:64472
+2024-10-24 16:58:21.354 +03:00 [INF] 00-22adc4f01ab020a251ed3d3283b067df-c8adb7bd5a0ba186-00 Executed endpoint 'gRPC - /greet.v1.Auth/Authenticate'
+2024-10-24 16:58:21.354 +03:00 [INF] 00-22adc4f01ab020a251ed3d3283b067df-c8adb7bd5a0ba186-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Auth/Authenticate - 200 null application/grpc 19.9551ms
+2024-10-24 16:58:38.895 +03:00 [INF] 00-d2e854ebf10d9adf505bc8a2518c8b5b-b68c737a955e205e-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - application/grpc null
+2024-10-24 16:58:38.921 +03:00 [INF] 00-d2e854ebf10d9adf505bc8a2518c8b5b-b68c737a955e205e-00 Executing endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-24 16:58:38.923 +03:00 [INF] 00-d2e854ebf10d9adf505bc8a2518c8b5b-b68c737a955e205e-00 Saying hello in Turkish to Hakan
+2024-10-24 16:58:38.923 +03:00 [INF] 00-d2e854ebf10d9adf505bc8a2518c8b5b-b68c737a955e205e-00 Executed endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-24 16:58:38.923 +03:00 [INF] 00-d2e854ebf10d9adf505bc8a2518c8b5b-b68c737a955e205e-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - 200 null application/grpc 28.177ms
+2024-10-24 16:58:45.793 +03:00 [INF] 00-8ffaf706786f2399cad7d9402fce0e6e-37f99c2e4e235285-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:45.794 +03:00 [INF] 00-8ffaf706786f2399cad7d9402fce0e6e-37f99c2e4e235285-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:45.795 +03:00 [INF] 00-8ffaf706786f2399cad7d9402fce0e6e-37f99c2e4e235285-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:45.795 +03:00 [INF] 00-8ffaf706786f2399cad7d9402fce0e6e-37f99c2e4e235285-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 2.3049ms
+2024-10-24 16:58:45.796 +03:00 [INF] 00-fae717388ab7b1a6630365af804e07ed-211d7c39aa671aa1-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:45.796 +03:00 [INF] 00-9e1b50a7174f882cc2fa1501f1636241-589f4cd6e562c7dd-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:45.796 +03:00 [INF] 00-43b9eeac9157cd7cd5805803087844c2-a077461b6c159d48-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:45.796 +03:00 [INF] 00-fae717388ab7b1a6630365af804e07ed-211d7c39aa671aa1-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:45.797 +03:00 [INF] 00-43b9eeac9157cd7cd5805803087844c2-a077461b6c159d48-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:45.796 +03:00 [INF] 00-9e1b50a7174f882cc2fa1501f1636241-589f4cd6e562c7dd-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:45.799 +03:00 [INF] 00-fae717388ab7b1a6630365af804e07ed-211d7c39aa671aa1-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:45.799 +03:00 [INF] 00-9e1b50a7174f882cc2fa1501f1636241-589f4cd6e562c7dd-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:45.799 +03:00 [INF] 00-43b9eeac9157cd7cd5805803087844c2-a077461b6c159d48-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:45.801 +03:00 [INF] 00-fae717388ab7b1a6630365af804e07ed-211d7c39aa671aa1-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 4.8917ms
+2024-10-24 16:58:45.801 +03:00 [INF] 00-9e1b50a7174f882cc2fa1501f1636241-589f4cd6e562c7dd-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 4.8765ms
+2024-10-24 16:58:45.801 +03:00 [INF] 00-43b9eeac9157cd7cd5805803087844c2-a077461b6c159d48-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 4.8541ms
+2024-10-24 16:58:47.853 +03:00 [INF] 00-de66add110c1f7cee0bb5676c1976460-ddf27d04d01cbcb8-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ExportOrderCsv - application/grpc null
+2024-10-24 16:58:47.856 +03:00 [INF] 00-de66add110c1f7cee0bb5676c1976460-ddf27d04d01cbcb8-00 Executing endpoint 'gRPC - /greet.v1.OrderImporter/ExportOrderCsv'
+2024-10-24 16:58:47.879 +03:00 [INF] 00-de66add110c1f7cee0bb5676c1976460-ddf27d04d01cbcb8-00 Exported 2 orders
+2024-10-24 16:58:47.880 +03:00 [INF] 00-de66add110c1f7cee0bb5676c1976460-ddf27d04d01cbcb8-00 Executed endpoint 'gRPC - /greet.v1.OrderImporter/ExportOrderCsv'
+2024-10-24 16:58:47.880 +03:00 [INF] 00-de66add110c1f7cee0bb5676c1976460-ddf27d04d01cbcb8-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ExportOrderCsv - 200 null application/grpc 27.6974ms
+2024-10-24 16:58:54.486 +03:00 [INF] 00-d1250766418334ed11da0ab0345f4b96-394be6c08558c175-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:54.486 +03:00 [INF] 00-d1250766418334ed11da0ab0345f4b96-394be6c08558c175-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:54.487 +03:00 [INF] 00-d1250766418334ed11da0ab0345f4b96-394be6c08558c175-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:54.487 +03:00 [INF] 00-d1250766418334ed11da0ab0345f4b96-394be6c08558c175-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 0.9991ms
+2024-10-24 16:58:54.487 +03:00 [INF] 00-b67e2b027f6ee0f37d7bc8d2213b9a10-42557922ec0b1b9a-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:54.487 +03:00 [INF] 00-7d0afb9552649bb324c8909f41abf371-9d8a5a8707dbe31e-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:54.488 +03:00 [INF] 00-b24373a11c95585a627340a013a42eda-003663fe60552bd0-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:58:54.488 +03:00 [INF] 00-b67e2b027f6ee0f37d7bc8d2213b9a10-42557922ec0b1b9a-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:54.488 +03:00 [INF] 00-7d0afb9552649bb324c8909f41abf371-9d8a5a8707dbe31e-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:54.488 +03:00 [INF] 00-b24373a11c95585a627340a013a42eda-003663fe60552bd0-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:54.489 +03:00 [INF] 00-b67e2b027f6ee0f37d7bc8d2213b9a10-42557922ec0b1b9a-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:54.489 +03:00 [INF] 00-7d0afb9552649bb324c8909f41abf371-9d8a5a8707dbe31e-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:54.489 +03:00 [INF] 00-b24373a11c95585a627340a013a42eda-003663fe60552bd0-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:58:54.489 +03:00 [INF] 00-b67e2b027f6ee0f37d7bc8d2213b9a10-42557922ec0b1b9a-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.4148ms
+2024-10-24 16:58:54.489 +03:00 [INF] 00-7d0afb9552649bb324c8909f41abf371-9d8a5a8707dbe31e-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.4711ms
+2024-10-24 16:58:54.489 +03:00 [INF] 00-b24373a11c95585a627340a013a42eda-003663fe60552bd0-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.5542ms
+2024-10-24 16:59:01.346 +03:00 [INF] 00-1a06d565409424882525553d6318b8be-727aa1d62cc4e673-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - application/grpc null
+2024-10-24 16:59:01.349 +03:00 [INF] 00-1a06d565409424882525553d6318b8be-727aa1d62cc4e673-00 Executing endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-24 16:59:01.349 +03:00 [INF] 00-1a06d565409424882525553d6318b8be-727aa1d62cc4e673-00 Saying hello in Turkish to 
+2024-10-24 16:59:01.349 +03:00 [INF] 00-1a06d565409424882525553d6318b8be-727aa1d62cc4e673-00 Executed endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-24 16:59:01.350 +03:00 [INF] 00-1a06d565409424882525553d6318b8be-727aa1d62cc4e673-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - 200 null application/grpc 3.83ms
+2024-10-24 16:59:08.103 +03:00 [INF] 00-9d62497f214fb47797886d4741809a52-d2e7d3d8a87e6fa8-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - application/grpc null
+2024-10-24 16:59:08.104 +03:00 [INF] 00-9d62497f214fb47797886d4741809a52-d2e7d3d8a87e6fa8-00 Executing endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-24 16:59:08.108 +03:00 [INF] 00-9d62497f214fb47797886d4741809a52-d2e7d3d8a87e6fa8-00 Saying hello in Turkish to Hakan
+2024-10-24 16:59:08.108 +03:00 [INF] 00-9d62497f214fb47797886d4741809a52-d2e7d3d8a87e6fa8-00 Executed endpoint 'gRPC - /greet.v1.Greeter/SayMerhaba'
+2024-10-24 16:59:08.108 +03:00 [INF] 00-9d62497f214fb47797886d4741809a52-d2e7d3d8a87e6fa8-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.Greeter/SayMerhaba - 200 null application/grpc 5.3492ms
+2024-10-24 16:59:10.934 +03:00 [INF] 00-ec8e70b7d4b63f2da9e8b8d4c8c876a3-f95600b99cdb047e-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:59:10.934 +03:00 [INF] 00-ec8e70b7d4b63f2da9e8b8d4c8c876a3-f95600b99cdb047e-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:59:10.934 +03:00 [INF] 00-ec8e70b7d4b63f2da9e8b8d4c8c876a3-f95600b99cdb047e-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:59:10.935 +03:00 [INF] 00-ec8e70b7d4b63f2da9e8b8d4c8c876a3-f95600b99cdb047e-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 0.9887ms
+2024-10-24 16:59:10.935 +03:00 [INF] 00-40aad6d09613d3940bb8db913389ac74-e6a810b46dfbfe0f-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:59:10.935 +03:00 [INF] 00-cff4a10629864ff4b3d7986f9196e350-ed500e68482d2843-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:59:10.935 +03:00 [INF] 00-b24c8d37db38ee3788dc472ca05fc274-f61812f06cb15086-00 Request starting HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - application/grpc null
+2024-10-24 16:59:10.935 +03:00 [INF] 00-40aad6d09613d3940bb8db913389ac74-e6a810b46dfbfe0f-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:59:10.936 +03:00 [INF] 00-cff4a10629864ff4b3d7986f9196e350-ed500e68482d2843-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:59:10.936 +03:00 [INF] 00-b24c8d37db38ee3788dc472ca05fc274-f61812f06cb15086-00 Executing endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:59:10.936 +03:00 [INF] 00-40aad6d09613d3940bb8db913389ac74-e6a810b46dfbfe0f-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:59:10.936 +03:00 [INF] 00-cff4a10629864ff4b3d7986f9196e350-ed500e68482d2843-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:59:10.936 +03:00 [INF] 00-b24c8d37db38ee3788dc472ca05fc274-f61812f06cb15086-00 Executed endpoint 'gRPC - /grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo'
+2024-10-24 16:59:10.936 +03:00 [INF] 00-40aad6d09613d3940bb8db913389ac74-e6a810b46dfbfe0f-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.1211ms
+2024-10-24 16:59:10.936 +03:00 [INF] 00-cff4a10629864ff4b3d7986f9196e350-ed500e68482d2843-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.2219ms
+2024-10-24 16:59:10.937 +03:00 [INF] 00-b24c8d37db38ee3788dc472ca05fc274-f61812f06cb15086-00 Request finished HTTP/2 POST https://localhost:5001/grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo - 200 null application/grpc 1.3813ms
+2024-10-24 16:59:15.124 +03:00 [INF] 00-4f46f4e45bfe58b72f1cd185731ed54b-a70d2e9eb8bc7f1c-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ImportOrderCsv - application/grpc null
+2024-10-24 16:59:15.127 +03:00 [INF] 00-4f46f4e45bfe58b72f1cd185731ed54b-a70d2e9eb8bc7f1c-00 Executing endpoint 'gRPC - /greet.v1.OrderImporter/ImportOrderCsv'
+2024-10-24 16:59:15.128 +03:00 [ERR] 00-4f46f4e45bfe58b72f1cd185731ed54b-a70d2e9eb8bc7f1c-00 An error occurred
+System.ArgumentException: CsvContent cannot be null
+   at GrpcCrudExample.Services.v1.OrderImportService.ImportOrderCsv(ImportOrderRequest request, ServerCallContext context) in /Users/hakancicek/Repos/grpc-crud-example/Services/v1/OrderImportService.cs:line 69
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at GrpcCrudExample.Interceptors.ExceptionInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) in /Users/hakancicek/Repos/grpc-crud-example/Interceptors/ExceptionInterceptor.cs:line 20
+2024-10-24 16:59:15.137 +03:00 [INF] 00-4f46f4e45bfe58b72f1cd185731ed54b-a70d2e9eb8bc7f1c-00 Error status code '"InvalidArgument"' with detail 'CsvContent cannot be null' raised.
+2024-10-24 16:59:15.138 +03:00 [INF] 00-4f46f4e45bfe58b72f1cd185731ed54b-a70d2e9eb8bc7f1c-00 Executed endpoint 'gRPC - /greet.v1.OrderImporter/ImportOrderCsv'
+2024-10-24 16:59:15.138 +03:00 [INF] 00-4f46f4e45bfe58b72f1cd185731ed54b-a70d2e9eb8bc7f1c-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ImportOrderCsv - 200 0 application/grpc 13.665ms
+2024-10-24 16:59:24.755 +03:00 [INF] 00-be5df520c5a199f16bc8e8fc5ac484ad-ef7a2fa06eddaed2-00 Request starting HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ImportOrderCsv - application/grpc null
+2024-10-24 16:59:24.757 +03:00 [INF] 00-be5df520c5a199f16bc8e8fc5ac484ad-ef7a2fa06eddaed2-00 Executing endpoint 'gRPC - /greet.v1.OrderImporter/ImportOrderCsv'
+2024-10-24 16:59:24.794 +03:00 [INF] 00-be5df520c5a199f16bc8e8fc5ac484ad-ef7a2fa06eddaed2-00 Imported 2 orders (non-streaming)
+2024-10-24 16:59:24.794 +03:00 [INF] 00-be5df520c5a199f16bc8e8fc5ac484ad-ef7a2fa06eddaed2-00 Executed endpoint 'gRPC - /greet.v1.OrderImporter/ImportOrderCsv'
+2024-10-24 16:59:24.795 +03:00 [INF] 00-be5df520c5a199f16bc8e8fc5ac484ad-ef7a2fa06eddaed2-00 Request finished HTTP/2 POST https://localhost:5001/greet.v1.OrderImporter/ImportOrderCsv - 200 null application/grpc 40.0899ms
+2024-10-24 16:59:34.259 +03:00 [INF]  Application is shutting down...
+2024-10-24 17:01:37.319 +03:00 [INF]  Starting web application
+2024-10-24 17:01:37.685 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-24 17:01:37.700 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-24 17:01:37.725 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-24 17:01:37.728 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-24 17:01:37.733 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-24 17:01:37.737 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-24 17:01:37.737 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-24 17:01:37.737 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-24 17:01:37.737 +03:00 [INF]  Hosting environment: Development
+2024-10-24 17:01:37.737 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/grpc-crud-example
+2024-10-24 17:04:54.219 +03:00 [INF]  Application is shutting down...
+2024-10-24 17:05:03.087 +03:00 [INF]  Starting web application
+2024-10-24 17:05:03.447 +03:00 [WRN]  Unable to bind ImportOrderCsvStream on greet.v1.OrderImporter to gRPC JSON transcoding. Client and bidirectional streaming methods are not supported.
+2024-10-24 17:05:03.461 +03:00 [INF]  User profile is available. Using '/Users/hakancicek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-24 17:05:03.488 +03:00 [WRN]  Overriding address(es) 'http://localhost:5000, https://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-10-24 17:05:03.491 +03:00 [WRN]  HTTP/2 is not enabled for 127.0.0.1:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-24 17:05:03.496 +03:00 [WRN]  HTTP/2 is not enabled for [::1]:5000. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.
+2024-10-24 17:05:03.502 +03:00 [INF]  Now listening on: http://localhost:5000
+2024-10-24 17:05:03.502 +03:00 [INF]  Now listening on: https://localhost:5001
+2024-10-24 17:05:03.502 +03:00 [INF]  Application started. Press Ctrl+C to shut down.
+2024-10-24 17:05:03.502 +03:00 [INF]  Hosting environment: Development
+2024-10-24 17:05:03.503 +03:00 [INF]  Content root path: /Users/hakancicek/Repos/grpc-crud-example
+2024-10-24 17:05:07.743 +03:00 [INF] 00-3dab653285c2cdcf39aae76de7929278-ab98463345c203f8-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2024-10-24 17:05:07.810 +03:00 [INF] 00-3dab653285c2cdcf39aae76de7929278-ab98463345c203f8-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 67.1097ms
+2024-10-24 17:05:07.814 +03:00 [INF] 00-d905ebc13e9461a23635769905f96e98-cb37dcb9e0c681c1-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - null null
+2024-10-24 17:05:07.820 +03:00 [INF] 00-d905ebc13e9461a23635769905f96e98-cb37dcb9e0c681c1-00 Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-10-24 17:05:07.821 +03:00 [INF] 00-d905ebc13e9461a23635769905f96e98-cb37dcb9e0c681c1-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 144929 text/css 7.7026ms
+2024-10-24 17:05:07.910 +03:00 [INF] 00-dccd89e2611500b6c791dda9cc3a6247-3d4dba19c58bd9e2-00 Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2024-10-24 17:05:07.972 +03:00 [INF] 00-dccd89e2611500b6c791dda9cc3a6247-3d4dba19c58bd9e2-00 Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.0872ms

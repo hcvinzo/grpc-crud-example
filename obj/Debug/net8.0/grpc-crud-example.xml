@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>grpc-crud-example</name>
+    </assembly>
+    <members>
+        <member name="M:GrpcCrudExample.Services.v1.AuthService.Authenticate(GrpcCrudExample.v1.AuthRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            Authenticate and generate a JWT token
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+            <exception cref="T:Grpc.Core.RpcException"></exception>
+        </member>
+        <member name="M:GrpcCrudExample.Services.v1.AuthService.RefreshToken(GrpcCrudExample.v1.RefreshTokenRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            Refresh the access token using a refresh token
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GrpcCrudExample.Services.v1.GreeterService.SayHello(GrpcCrudExample.v1.HelloRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            Say hello to the given name
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GrpcCrudExample.Services.v1.GreeterService.SayMerhaba(GrpcCrudExample.v1.HelloRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            Say hello to the given name in Turkish
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GrpcCrudExample.Services.v1.OrderImportService.ImportOrderCsvStream(Grpc.Core.IAsyncStreamReader{GrpcCrudExample.v1.ImportOrderRequest},Grpc.Core.ServerCallContext)">
+            <summary>
+            Import orders from a CSV stream (streaming version)
+            </summary>
+            <param name="requestStream"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GrpcCrudExample.Services.v1.OrderImportService.ImportOrderCsv(GrpcCrudExample.v1.ImportOrderRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            Import orders from a CSV string
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GrpcCrudExample.Services.v1.OrderImportService.ExportOrderCsv(GrpcCrudExample.v1.ExportOrderRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            Export orders to a CSV file
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GrpcCrudExample.Services.v1.OrderImportService.ExportOrderCsvStream(GrpcCrudExample.v1.ExportOrderRequest,Grpc.Core.IServerStreamWriter{GrpcCrudExample.v1.ExportOrderResponse},Grpc.Core.ServerCallContext)">
+            <summary>
+            Export orders to a CSV file (streaming version)
+            </summary>
+            <param name="request"></param>
+            <param name="responseStream"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GrpcCrudExample.v1.GreetReflection">
+            <summary>Holder for reflection information generated from Protos/greet.proto</summary>
+        </member>
+        <member name="P:GrpcCrudExample.v1.GreetReflection.Descriptor">
+            <summary>File descriptor for Protos/greet.proto</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.HelloRequest">
+            <summary>
+            The request message containing the user's name.
+            </summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.HelloRequest.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.HelloReply">
+            <summary>
+            The response message containing the greetings.
+            </summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.HelloReply.MessageFieldNumber">
+            <summary>Field number for the "message" field.</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.MerhabaReply">
+            <summary>
+            The response message containing the Turkish greeting.
+            </summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.MerhabaReply.MessageFieldNumber">
+            <summary>Field number for the "message" field.</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.Greeter">
+            <summary>
+            The greeting service definition.
+            </summary>
+        </member>
+        <member name="P:GrpcCrudExample.v1.Greeter.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.Greeter.GreeterBase">
+            <summary>Base class for server-side implementations of Greeter</summary>
+        </member>
+        <member name="M:GrpcCrudExample.v1.Greeter.GreeterBase.SayHello(GrpcCrudExample.v1.HelloRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            Sends a greeting
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:GrpcCrudExample.v1.Greeter.GreeterBase.SayMerhaba(GrpcCrudExample.v1.HelloRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            Sends a greeting in Turkish
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:GrpcCrudExample.v1.Greeter.BindService(GrpcCrudExample.v1.Greeter.GreeterBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:GrpcCrudExample.v1.Greeter.BindService(Grpc.Core.ServiceBinderBase,GrpcCrudExample.v1.Greeter.GreeterBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:GrpcCrudExample.v1.OrderimportReflection">
+            <summary>Holder for reflection information generated from Protos/orderimport.proto</summary>
+        </member>
+        <member name="P:GrpcCrudExample.v1.OrderimportReflection.Descriptor">
+            <summary>File descriptor for Protos/orderimport.proto</summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.ImportOrderRequest.CsvContentFieldNumber">
+            <summary>Field number for the "csv_content" field.</summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.ImportOrderResponse.ImportedCountFieldNumber">
+            <summary>Field number for the "imported_count" field.</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.ExportOrderRequest">
+            <summary>
+            You can add filter parameters here if needed
+            </summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.ExportOrderResponse.CsvContentFieldNumber">
+            <summary>Field number for the "csv_content" field.</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.OrderImporter">
+            <summary>
+            Order importer service
+            </summary>
+        </member>
+        <member name="P:GrpcCrudExample.v1.OrderImporter.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.OrderImporter.OrderImporterBase">
+            <summary>Base class for server-side implementations of OrderImporter</summary>
+        </member>
+        <member name="M:GrpcCrudExample.v1.OrderImporter.BindService(GrpcCrudExample.v1.OrderImporter.OrderImporterBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:GrpcCrudExample.v1.OrderImporter.BindService(Grpc.Core.ServiceBinderBase,GrpcCrudExample.v1.OrderImporter.OrderImporterBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:GrpcCrudExample.v1.AuthReflection">
+            <summary>Holder for reflection information generated from Protos/auth.proto</summary>
+        </member>
+        <member name="P:GrpcCrudExample.v1.AuthReflection.Descriptor">
+            <summary>File descriptor for Protos/auth.proto</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.AuthRequest">
+            <summary>
+            The request message for authentication.
+            </summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.AuthRequest.UsernameFieldNumber">
+            <summary>Field number for the "username" field.</summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.AuthRequest.PasswordFieldNumber">
+            <summary>Field number for the "password" field.</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.AuthReply">
+            <summary>
+            The response message for authentication.
+            </summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.AuthReply.TokenFieldNumber">
+            <summary>Field number for the "token" field.</summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.AuthReply.RefreshTokenFieldNumber">
+            <summary>Field number for the "refresh_token" field.</summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.RefreshTokenRequest.RefreshTokenFieldNumber">
+            <summary>Field number for the "refresh_token" field.</summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.RefreshTokenResponse.AccessTokenFieldNumber">
+            <summary>Field number for the "access_token" field.</summary>
+        </member>
+        <member name="F:GrpcCrudExample.v1.RefreshTokenResponse.RefreshTokenFieldNumber">
+            <summary>Field number for the "refresh_token" field.</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.Auth">
+            <summary>
+            The authentication service definition.
+            </summary>
+        </member>
+        <member name="P:GrpcCrudExample.v1.Auth.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:GrpcCrudExample.v1.Auth.AuthBase">
+            <summary>Base class for server-side implementations of Auth</summary>
+        </member>
+        <member name="M:GrpcCrudExample.v1.Auth.AuthBase.Authenticate(GrpcCrudExample.v1.AuthRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            Authenticates a user
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:GrpcCrudExample.v1.Auth.AuthBase.RefreshToken(GrpcCrudExample.v1.RefreshTokenRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            Refreshes a JWT token
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:GrpcCrudExample.v1.Auth.BindService(GrpcCrudExample.v1.Auth.AuthBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:GrpcCrudExample.v1.Auth.BindService(Grpc.Core.ServiceBinderBase,GrpcCrudExample.v1.Auth.AuthBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>

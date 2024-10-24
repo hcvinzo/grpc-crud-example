@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcCrudExample.v1";
+
+package greet.v1;
+
+import "google/api/annotations.proto";
+
+// The authentication service definition.
+service Auth {  
+  // Authenticates a user
+  rpc Authenticate (AuthRequest) returns (AuthReply) {
+    option (google.api.http) = {
+      post: "/v1/auth/authenticate"
+      body: "*"
+    };
+  }  
+
+  // Refreshes a JWT token
+  rpc RefreshToken (RefreshTokenRequest) returns (RefreshTokenResponse) {
+  option (google.api.http) = {
+    post: "/v1/auth/refresh"
+    body: "*"
+  };
+}
+}
+
+// The request message for authentication.
+message AuthRequest {
+  string username = 1;
+  string password = 2;
+}
+
+// The response message for authentication.
+message AuthReply {
+  string token = 1;
+  string refresh_token = 2;
+}
+
+message RefreshTokenRequest {
+  string refresh_token = 1;
+}
+
+message RefreshTokenResponse {
+  string access_token = 1;
+  string refresh_token = 2;
+}
